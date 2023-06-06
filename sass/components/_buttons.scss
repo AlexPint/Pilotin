@@ -1,0 +1,79 @@
+.goback{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    border: solid 1px $color-txt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-perspective: 450px;
+    -moz-perspective : 450px; 
+    perspective: 450px;
+
+    animation: loop-goback 10s linear infinite ;
+
+    transform-style: preserve-3d;
+
+    .container{
+        width: 40px;
+        height: 40px;
+        border-radius: 25%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transform-style: preserve-3d;;
+        transform: translateZ(0px);
+        transition: all 200ms linear;
+
+    }
+    p{
+        transform-style: preserve-3d;
+        transform: translateZ(0px);
+    }
+}
+
+#ball1 {
+    left:0; 
+    top:0;
+    z-index: 2000;
+}
+
+.test{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.goback:hover{
+    transform: rotateX(20deg) rotateY(10deg) rotateZ(-10deg);
+    animation: none;
+    .container{
+        background-color: $color-block;
+        transform-style: preserve-3d;
+        transform: translateZ(20px);
+    }
+    p{
+        transform: translateZ(6px);
+    }
+}
+.goback:active{
+    .container{
+        background-color: $color-block;
+
+        transform-style: preserve-3d;
+        transform: translateZ(10px);
+        box-shadow: $outside-shadow;
+
+    }
+
+}

@@ -1,0 +1,173 @@
+//------- INDEX PAGE -------//
+// Blur pour le header
+.blur{
+    backdrop-filter: blur(1.5px);
+    background-color: rgba($color-txt, 0.1);
+    position: absolute;
+    &-1{
+        width: 196px;
+        height: 8px;
+        top: 12px;
+        left: -396px;
+        animation: blur-1 500ms linear forwards;
+
+    }
+    &-2{
+        width: 94px;
+        height: 8px;
+        top: 12px;
+        left: -470px;
+        animation: blur-2 500ms linear forwards;
+
+    }
+    &-3{
+        width: 128px;
+        height: 8px;
+        top: 12px;
+        left: -328px;
+        animation: blur-3 500ms linear forwards;
+    }
+}
+
+
+// classe qui me permet de rendre les boutons de mon menu en position relative pour appliquer les z index sur les blur
+.relative{
+    position: relative;
+}
+
+// Blur pour le nav
+.blur{ 
+        &-4{
+            width: 87px;
+            height: 42px;
+            top: 0;
+            left: 280px;
+            z-index: -1;
+            backdrop-filter: blur(0.4px);
+        }
+        &-5{
+            width: 152px;
+            height: 18px;
+            top: 22px;
+            right: -192px;
+            z-index: 1;
+        }
+        &-6{
+            width: 154px;
+            height: 42px;
+            top: -2px;
+            left: 280px;
+            z-index: 1;
+            backdrop-filter: blur(1.4px);
+        }
+        &-7{
+            width: 125px;
+            height: 18px;
+            top: 0px;
+            right: -192px;
+            z-index: 1;
+        }
+        &-8{
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            z-index: 1;
+            backdrop-filter: blur(0.4px);
+        }
+    }
+
+//------- ANIM PAGE -------//
+
+// Blur pour le banner
+.blur{
+    &-13{
+        width: 40%;
+        height: 24px;
+        top: 16px;
+        z-index: 1;
+        left: -40%;
+        backdrop-filter: blur(2px);
+        animation: blurup 5s cubic-bezier(.86,-0.01,.16,1) infinite alternate forwards;
+
+    }
+    &-14{
+        backdrop-filter: blur(2px);
+        width: 40%;
+        height: 24px;
+        bottom: 16px;
+        right: -40%;
+        z-index: 1;
+        animation: blurdown 5s cubic-bezier(.86,-0.01,.16,1) infinite alternate forwards;
+
+    }
+}
+
+// Blur pour le watermark
+.blur{
+    &-15{
+        width: 187px;
+        height: 42px;
+        top: 0px;
+        z-index: 1;
+        backdrop-filter: blur(0.4px);
+    }
+    &-16{
+        backdrop-filter: blur(1px);
+        width: 102px;
+        height: 5px;
+        top: 14px;
+        left: 0px;
+        z-index: 1;
+    }
+    &-17{
+        backdrop-filter: blur(1px);
+        width: 49px;
+        height: 5px;
+        top: 32px;
+        left: 20px;
+        z-index: 1;
+    }
+    &-18{
+        backdrop-filter: blur(1px);
+        width: 71px;
+        height: 5px;
+        top: 32px;
+        left: 95px;
+        z-index: 1;
+    }
+}
+
+//------- TYPO PAGE -------//
+// Blur pour le watermark
+.blur{
+    &-19{
+        width: 187px;
+        height: 42px;
+        z-index: 1;
+        backdrop-filter: blur(0.4px);
+    }
+    &-20{
+        backdrop-filter: blur(1px);
+        width: 102px;
+        height: 5px;
+        top: 7px;
+        left: 0px;
+        z-index: 1;
+    }
+    &-21{
+        backdrop-filter: blur(1px);
+        width: 49px;
+        height: 5px;
+        top: 26px;
+        left: 20px;
+        z-index: 1;
+    }
+    &-22{
+        backdrop-filter: blur(1px);
+        width: 71px;
+        height: 5px;
+        top: 26px;
+        left: 95px;
+        z-index: 1;
+    }
+}

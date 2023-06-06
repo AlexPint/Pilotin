@@ -1,0 +1,35 @@
+
+//------ UTILS ------
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+//------ BASE ------
+@import "./base/base";
+@import "./base/typography";
+
+//------ COMPONENTS ------
+@import "./components/animations";
+@import "./components/buttons";
+@import "./components/griadient";
+@import "./components/blur";
+@import "./components/morphing";
+@import "./components/terminal";
+@import "./components/watermark";
+
+//------ LAYOUT ------
+@import "./layout/background";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+//------ PAGES ------
+@import "./pages/index.scss";
+@import "./pages/anim";
+@import "./pages/typo";
+
+
+
+

@@ -1,0 +1,66 @@
+
+//------ COLORS ------
+
+$color-back:linear-gradient(145deg, #2740FD 20%, #2039f7  40%, #003FB7 60%,  #040a6e 100%);
+$color-back2:linear-gradient(145deg, #393f4e 20%, #2a3141  40%, #1a202f 60%,  #090d15 100%);
+$color-txt: #CDDDEF;
+$color-block: #090d15;
+
+/*
+$color-primary: ;
+$color-secondary: ;
+
+$color-white: ;
+*/
+
+//------ BOX-SHADOW ------
+
+$shadow-block: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+$shadow-block-4: rgba(0, 0, 0, 0.60) 0px 3px 8px;
+
+$shadow-block-1: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+$shadow-block-2: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+$shadow-block-3: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+
+//------ Morphing Colors ------
+//blue
+$primary-light: #8abdff;
+$primary: #c8d8eb;
+$primary-dark: #1d0053;
+
+//white
+$grey-light-1: #E4EBF5;
+$grey-light-2: #c8d0e7;
+$grey-light-3: #bec8e4;
+$grey-light-4: #9baacf;
+
+//black
+$grey-dark-1: #393f4e;
+$grey-dark-2: #2a3141;
+$grey-dark-3: #1a202f;
+$grey-dark-4: #090d15;
+
+//box shadow
+$shadow: 
+.3rem .3rem .6rem black, 
+-.2rem -.2rem .5rem $grey-dark-3;
+
+$inner-shadow: 
+inset .2rem .2rem .5rem black, 
+inset -.2rem -.2rem .5rem $grey-dark-3;
+
+$inner-shadow-2: 
+inset .2rem .2rem .5rem $primary-dark, 
+inset -.2rem -.2rem .5rem $primary-light;
+ 
+
+$outside-shadow: 
+.2rem .2rem .5rem $primary-dark; 
+
+//Animation
+$typing-anim: letter-typing 200ms steps(1) forwards;
+$case-anim: case-typing 200ms steps(1) forwards;

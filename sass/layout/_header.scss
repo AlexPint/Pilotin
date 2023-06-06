@@ -1,0 +1,120 @@
+//------ INDEX PAGE ------//
+.head_introduction{
+    h1{
+        font-family: 'Satoshi-Variable';
+        margin-bottom: 10px;
+        opacity: 1;
+        animation: intro-anim 200ms linear 9400ms 3 forwards;
+    }
+    h2{
+        font-family: 'Satoshi-Variable';
+        margin-bottom: 5px;
+        opacity: 1;
+        animation: intro-anim 200ms linear 10400ms 3 forwards;
+    }
+    p{  
+        font-family: 'Satoshi-Variable';
+        font-size: 25px;
+        opacity: 1;
+        animation: intro-anim 200ms linear 11000ms 3 forwards;
+    }
+
+}
+
+.head_container-intro{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin-left: 50px;
+
+}
+
+
+//------ ANIM PAGE ------//
+
+#header_anim{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    h2{
+        font-size: 35px;
+        margin-right: 4px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        animation: banner 20s linear infinite forwards;
+        z-index: 0;
+    }
+}
+
+//------ Typo PAGE ------//
+.typo{
+    width: 702px;
+    height: 60px;
+    position: relative;
+    top: 80px;
+    overflow: visible;
+    //border: solid 1px green;
+
+    &_full{
+        width: 746px;
+        height: auto;
+        position: relative;
+        z-index: 8;   
+        transform-origin: left;
+        animation: typo-movement 18s cubic-bezier(.52,.84,.79,1.06) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+        //border: solid 1px red;
+
+        p{
+            font-family: 'Satoshi-Bold';
+            font-size: 50px;
+            text-transform: uppercase;
+            color: $color-txt;
+        }
+    }
+
+    &_border{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        //border: solid 1px green;
+        z-index: 2;
+
+
+        p{
+            font-family: 'Satoshi-Bold';
+            font-size: 50px;
+            text-transform: uppercase;
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: $color-txt;
+            color: transparent;
+        }
+    }
+}
+
+.edge_container{
+    width: 100px;
+    height: 100px;
+    perspective: 100px;
+    position: absolute;
+    //border: solid 1px green;
+    z-index: 3;
+    top: -15px;
+    right: -73px;
+    animation: miror-movement 18s cubic-bezier(.52,.84,.79,1.06) infinite;
+
+    .typo_edge{
+        width: 80px;
+        height: 80px;
+        border: solid 2px $color-txt;
+        transform: rotateY(-50deg);
+
+        background: rgb(205,221,239);
+        background: linear-gradient(90deg, rgba(205,221,239,0.4) 0%, rgba(36,61,89,0.4) 100%);
+        box-shadow: $shadow-block-4;
+    }
+}

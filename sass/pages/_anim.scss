@@ -1,0 +1,69 @@
+
+#wrapper_anim{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+#header_anim{
+    width: 100%;
+    height: 14%;
+}
+  
+#main_anim{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.back_shape{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    // pour l'aniamtion on doit jouer sur la position n fontion du degré de rotation + de la position du repère "transform-origin"
+    top: 10%;
+    left: -5%;
+    border: solid 1px $color-txt;
+    transform-origin: 40% 500%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 40%;
+        top: 500%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 5px;
+        background-color: red;
+        border-radius: 50%;
+      }
+    
+}
+
+.back_shape--1{
+    transform: rotate(10deg);
+    //animation: back-shape 5s linear 1 both;
+}
+.back_shape--2{
+    transform: rotate(50deg);
+    //animation: back-shape2 5s linear 1 both;
+}
+
+#footer_anim{
+    width: 30%;
+    height: auto;
+    margin: 0 0 25px 25px;
+    position: absolute;
+    bottom: 0;
+}
+
+  

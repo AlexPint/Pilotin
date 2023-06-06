@@ -1,0 +1,611 @@
+/*
+//-----Page Index -----//
+
+//----- Animation pouvant remplacer le JS du noise -----
+@keyframes flicker{
+    0%{
+        background-position: 0, 0;
+    }
+    25%{
+        background-position: -70%, 25%;
+    }
+    50%{
+        background-position: 40%, -50%;
+    }
+    75%{
+        background-position: -34%, 22%;
+    }
+    90%{
+        background-position: 90%, 30%;
+    }
+    100%{
+        background-position: 0%, 0%;
+    }
+}
+
+/* -----Typing Animation -----*/
+
+/*
+@keyframes typing-mode{
+    0%{
+        border: solid 1px $color-txt;
+    }
+    65%{
+        background-color: $color-txt;
+        border: none;    
+    }
+    100%{
+        background-color: none;
+        //border: solid 1px $color-txt;
+    }
+}
+@keyframes letter-typing{
+    to{
+        color: $color-txt;
+        visibility: visible;
+    }
+}
+@keyframes case-typing{
+    0%{
+        background-color: $color-txt;
+        //border: solid 1px $color-txt;
+
+    }
+    99%{
+        background-color: $color-txt;
+        //border: solid 1px $color-txt;
+
+    }
+    100%{
+        background-color: none;
+        //border: solid 1px $color-txt;
+
+    }
+}
+@keyframes case-loader{
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//-----Animation background -----//
+
+
+@keyframes back-change{
+    0% {
+        background: white fixed;
+    }
+    50% {
+        background: $color-back2 fixed;
+    }
+    100% {
+        background: $color-back fixed;
+    }
+}
+
+//-----Animation introduction -----//
+
+@keyframes intro-anim{
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//-----Animation nav -----//
+
+@keyframes blur-anim{
+    0% {
+        opacity: 1;
+        width: 50px;
+        height: 70px;
+        top: -50px;
+        left: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        width: 80px;
+        height: 30px;
+        top: -40px;
+        left: 160px;
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 80px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes nav-discover{
+    0% {
+        width: 168px;
+        height: 0px;
+        opacity: 1;
+    }
+    100% {
+        width: 168px;
+        height: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes blur-moove{
+    0% {
+        width: 168px;
+        height: 20px;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    35% {
+        width: 108px;
+        height: 20px;
+        transform-origin: right;
+        transform: translateX(132px);
+        opacity: 1;
+
+    }
+    100% {
+        width: 168px;
+        height: 20px;
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes border-moove{
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes nav-anim{
+    0% {
+        transform: translateY(-36px);
+        opacity: 0;
+    }
+    100% {
+        position: initial;
+        opacity: 1;
+    }
+}
+
+//-----Date Animation  -----//
+
+@keyframes date-anim{
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+//-----Social Icon Animation  -----//
+
+@keyframes icon-anim{
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes icon-anim2{
+    0% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+//-----Nav Menu selection -----
+
+
+.blur__appear{
+    &--1:hover{
+        .blur-4{
+            left: 0px;
+            transition: left 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--2:hover{
+        .blur-5{
+            right: 8px;
+            transition: right 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--3:hover{
+        .blur-6{
+            left: 0px;
+            transition: left 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--4:hover{
+        .blur-7{
+            right: 0px;
+            transition: right 150ms linear;
+        }
+    }
+}
+
+//----- PAGE ANIM -----
+ //----- Gradient Animation -----
+@keyframes gradient-moove{
+    0%{
+        background-position: left top;
+        transform: rotate(0deg);
+    }
+    33%{
+        background-position: right top;
+        transform: rotate(120deg);
+    }
+    66%{
+        background-position: right bottom;
+        transform: rotate(240deg);
+    }
+    100%{
+        background-position: left bottom;
+        transform: rotate(360deg);
+    }
+}
+
+
+//----- Morphing Animation -----
+
+@keyframes wave{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    33%{
+        transform: scale(2);
+        opacity: 1;
+    }
+    66%{
+        transform: scale(4);
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+
+//----- Header Anim Page Animation -----
+
+@keyframes banner{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+@keyframes blurup{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(350%);
+    }
+}
+@keyframes blurdown{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-350%);
+    }
+}
+
+
+//------ PAGE TYPO-------//
+//------ miror title animation -------//
+
+
+@keyframes miror-movement{
+    0% {
+        transform: translateX(0);
+    }
+    //A de animations
+    20% {
+        transform: translateX(-382px);
+    }
+    //m de animations
+    40% {
+        transform: translateX(-246px);
+    }
+    //T de typographie
+    60% {
+        transform: translateX(-744px);
+        } 
+    //O de typographie
+    80% {
+        transform: translateX(-612px);
+    }
+    //O de typographie
+    90% {
+        transform: translateX(-630px);
+    }
+    //Retour à la case départ
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes typo-movement{
+    0% {
+        width: 746px;
+    }
+    //A de animations
+    20% {
+        width: 364px;
+    }
+    //M de animations
+    40% {
+        width: 500px;
+    }
+    //T de typographie
+    60% {
+        width: 0px;
+    }
+    //O de typographie
+    80% {
+        width: 134px;
+    }
+    //O de typographie
+    90% {
+        width: 116px;
+    }
+    //Retour à la case départ
+    100% {
+        width: 746px;
+    }
+}
+
+
+
+
+@keyframes loop-goback{
+    from{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+
+//----- Page Typo -----
+
+@keyframes bounce-text{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    //20%{
+    //    transform: translateY(-8px);
+    //}
+    60%{
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    70%{
+        transform: translateY(1px);
+        opacity: 1;
+    }
+    80%{
+        transform: translateY(-4px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes run-text{
+    0%{
+        transform: translateX(350px);
+        opacity: 0;
+    }
+    40%{
+        position: initial;
+        opacity: 1;
+    }
+    80%{
+        transform: translateX(-15px);
+        opacity: 1;
+    }
+
+    100%{
+        position: initial;
+        opacity: 1;
+
+    }
+}
+
+@keyframes variable-fonts{
+    0%{
+        font-weight: 500;
+    }
+    20%{
+        font-family: 'Oddval-SemiBold';
+    }
+    40%{
+        font-family: 'Oddval-SemiBoldItalic';
+    }
+    60%{
+        font-family: 'Panchang-Variable';
+    }
+    80%{
+        font-family: 'Panchang-Variable';
+        font-weight: 800;
+    }
+
+    100%{
+        font-weight: 500;
+    }
+}
+
+@keyframes blur-1{
+    0%{
+        left: -396px;
+    }
+    100%{
+        left: 2px;
+    }
+}
+
+
+@keyframes blur-2{
+    0%{
+        left: -470px;
+    }
+    100%{
+        left: 36px;
+    }
+}
+
+@keyframes blur-3{
+    0%{
+        left: -328px;
+    }
+    100%{
+        left: 178px;
+    }
+}
+
+@keyframes blur-4{
+    0%{
+        left: -328px;
+    }
+    100%{
+        left: 178px;
+    }
+}
+
+*/
+
+@keyframes back-shape{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes back-shape2{
+    0%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+
+
+@keyframes morphing-anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+@keyframes gradient-anim{
+    0%{
+        transform: rotate(50deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

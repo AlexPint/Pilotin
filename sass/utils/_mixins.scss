@@ -1,0 +1,128 @@
+
+
+
+
+/* Exemple
+@mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
+    text-shadow: $offset $offset $colour;
+}
+
+@mixin border($colour:$colour-primary) {
+    border: .1rem solid $colour;
+}
+
+@mixin img-ratio {
+    width: 100%;
+        display: block;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+}
+
+@mixin btn {
+    padding: $grid-gutter;
+    @include border;
+    color: $colour-primary;
+    background: $colour-secondary;
+    cursor: pointer;
+    &:hover{
+        background: $colour-primary;
+        color: $colour-accent;
+    }
+    &--full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+*/
+
+@mixin flexR{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flexR_JC{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin flexR_AC{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+@mixin flex_CC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_CCC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_CFS{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin flexR_spaceB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin flexR_center_spaceB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@mixin row-start-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flexR_end_spaceB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@mixin flexR_end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+@mixin flexR_endend{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+@mixin flexC_end{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin flexC{
+    display: flex;
+    flex-direction: column;
+}
