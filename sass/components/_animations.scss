@@ -25,7 +25,7 @@
 
 /* -----Typing Animation -----*/
 
-/*
+
 @keyframes typing-mode{
     0%{
         border: solid 1px $color-txt;
@@ -384,6 +384,7 @@
 }
 
 
+
 //------ PAGE TYPO-------//
 //------ miror title animation -------//
 
@@ -571,7 +572,7 @@
     }
 }
 
-*/
+
 
 @keyframes back-shape{
     0%{
@@ -609,3 +610,124 @@
         transform: rotate(0deg);
     }
 }
+
+
+
+
+@keyframes backshape{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(2%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+//----- Page Anim -----
+
+
+@keyframes touch{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes touch1{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes touchme{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes touchme1{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes scrolling-moove{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(68px);
+    }
+}
+
+@keyframes scrolling-hide{
+    0%{
+        opacity: 1;    
+    }
+    100%{
+        opacity: 0;    
+    }
+}
+

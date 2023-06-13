@@ -1,4 +1,7 @@
-.goback{
+//----- Page Anim -----
+
+
+.goback_button{
     width: 50px;
     height: 50px;
     border-radius: 25%;
@@ -42,19 +45,36 @@
     z-index: 2000;
 }
 
-.test{
-    width: 50px;
-    height: 50px;
+.goback{
+    width: 80px;
+    height: 80px;
     position: absolute;
-        display: flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    .test{
+        display: flex;
+        flex-direction: row;
+    }
+    .touch{
+        margin-top: 10px;
+        text-align: center;
+        animation: touch 500ms linear 6s forwards, touch1 700ms linear 10s forwards;
+        opacity: 0;
+    }
+    .touch_me{
+        margin-top: 10px;
+        text-align: center;
+        opacity: 0;
+        animation: touchme 500ms linear 6100ms forwards, touchme1 500ms linear 10100ms forwards;
+    }
+
 }
 
 
 
-.goback:hover{
+.goback_button:hover{
     transform: rotateX(20deg) rotateY(10deg) rotateZ(-10deg);
     animation: none;
     .container{
@@ -66,7 +86,7 @@
         transform: translateZ(6px);
     }
 }
-.goback:active{
+.goback_button:active{
     .container{
         background-color: $color-block;
 
@@ -76,4 +96,44 @@
 
     }
 
+}
+
+
+
+
+.scroll{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    &_box{
+        width: 6px;
+        height: 80px;
+        border-radius: 6px;
+        //padding: 4px 0 4px 0;
+        background-color: rgba($color-txt, 0.1);
+        backdrop-filter: blur(2px);
+        &-curser{
+            width: 5px;
+            height: 11px;
+            border: solid 0.8px $color-txt;
+            border-radius: 5px;
+            animation: scrolling-moove 2s cubic-bezier(0,.68,1,.28) alternate infinite;
+        }
+    }
+    &_txt{
+        position: relative;
+        margin-left: 2px;
+        p{
+            position: absolute;
+            text-orientation: upright;
+            writing-mode: vertical-rl;
+            font-size: 11px;
+            font-family: 'Satoshi-Light';
+        }
+    }
+}
+
+.hidden{
+    animation: scrolling-hide 500ms ease forwards;
 }

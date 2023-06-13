@@ -25,7 +25,7 @@ setInterval(() => {
 
 /*----- Animation morphing Page ANIM---- */
 /* Play Button */
-/*
+
 document.addEventListener('DOMContentLoaded', function() {
   const circle = document.querySelector(".circle");
   const playBtn = document.querySelector(".circle__btn");
@@ -118,37 +118,39 @@ stopElement.addEventListener('mouseenter', function() {
   ball.vy = 0;
 });
 
-*/
+
 
 const activeShapeMorphing = document.querySelector('.back_shape--1');
 const activeShapeGradient = document.querySelector('.back_shape--2');
 const activeMorphing = document.querySelector('.morphing');
 const activeGradient = document.querySelector('.gradient');
 
-const headerTitle = document.querySelector('#header_anim');
+const headerTitle = document.querySelector('.header_title');
+const headerTitleBis = document.querySelector('.header_title--1');
+const scrollHidden = document.querySelector('.scroll');
 
 
-// Sélectionner le body
-const body = document.body;
+function mooveBackShape() {
+  activeShapeMorphing.style.animation = `back-shape 3s linear 1 both`;
+  activeMorphing.style.animation = `morphing-anim 3s linear 1 both`;
+  activeShapeGradient.style.animation = `back-shape2 3s linear 1 both`;
+  activeGradient.style.animation = `gradient-anim 3s ease-in 1 both`;
 
-// Vérifier si le body a une propriété overflow-y: hidden
-const hasHiddenOverflowY = getComputedStyle(body).overflowY === "hidden";
+  headerTitle.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /"
+  headerTitleBis.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /"
+  scrollHidden.classList.add("hidden");
 
-// Vérifier si le body a une propriété overflow-x: hidden
-const hasHiddenOverflowX = getComputedStyle(body).overflowX === "hidden";
+}
 
-//
+// on prend en compte l'événement "wheel" associé au défilement plutot que le scroll puis que nous avons sur la page une propritété "overflow: hidden"
+window.addEventListener("wheel", function(event) {
+  // Récupérer la valeur du défilement horizontal
+  const deltaX = event.deltaX;
 
-window.addEventListener("scroll", function() {
-  // Vérifier si le défilement vertical est autorisé
-  if (!hasHiddenOverflowY && window.scrollY > 0) {
-    // L'animation souhaitée ici
-    console.log("Défilement vertical détecté !");
-  }
+  // Récupérer la valeur du défilement vertical
+  const deltaY = event.deltaY;
 
-  // Vérifier si le défilement horizontal est autorisé
-  if (!hasHiddenOverflowX && window.scrollX > 0) {
-    // L'animation souhaitée ici
-    console.log("Défilement horizontal détecté !");
-  }
+  // Faire quelque chose avec les valeurs de défilement (par exemple, déclencher une animation)
+  console.log("Défilement détecté - deltaX:", deltaX, "deltaY:", deltaY);
+  mooveBackShape()
 });

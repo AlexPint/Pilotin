@@ -5,7 +5,7 @@
 //La fonction Math.floor(x) renvoie le plus grand entier qui est inférieur ou égal à un nombre x, ca aide a ne pas avoir les virgules
 //Math.random() renvoie un nombre décimal compris entre 0 (inclus) et 1 (exclus). Cela permet de générer une valeur aléatoire.
 //Le +1 est utilisé pour garantir que la valeur maximale soit incluse dans la plage de valeurs possibles.
-/*
+
 
 const noise = document.querySelector('.noise');
 
@@ -19,11 +19,11 @@ function randomPosition(min, max){
 setInterval(() => {
     randomPosition(-30, 100);
   }, 50);
-*/
+
 
 
 /*----- Animation loader terminal Page INDEX---- */
-/*
+
 
 // Récupération des éléments HTML. On va chercher les classes correspondantes et on en fait des variables
 const progressBar = document.querySelector('.loader__progress');
@@ -50,7 +50,7 @@ function animate() {
   progressBar.style.width = `${progress}%`;
   braket.style.visibility = `visible`;
   braket2.style.visibility = `visible`;
-  // Mise à jour du texte
+  // Mise à jouru texte
   if (progress >= 0 && progress < 10) {
     textLoader.innerHTML = '<p>Initialisation de la page. fetchmetadata/code|source2[].1992@</p>';
     delay; 
@@ -132,4 +132,3 @@ setTimeout(function() {
 }, 7400);
 
 
-*/
