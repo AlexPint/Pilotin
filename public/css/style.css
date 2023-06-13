@@ -5,35 +5,6 @@ $color-secondary: ;
 
 $color-white: ;
 */
-/* EXEMPLE
-@function lightness-shift($colour) {
-    @if (lightness($colour) < 25%){
-        @return lighten($colour, 10%);
-    }@else{
-        @return darken($colour, 10%);
-    }
-}
-*/
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
-}
-
 *,
 *::after,
 *::before {
