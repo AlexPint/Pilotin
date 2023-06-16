@@ -149,12 +149,12 @@
 
 @keyframes nav-discover{
     0% {
-        width: 168px;
+        width: 108px;
         height: 0px;
         opacity: 1;
     }
     100% {
-        width: 168px;
+        width: 108px;
         height: 20px;
         opacity: 1;
     }
@@ -162,21 +162,21 @@
 
 @keyframes blur-moove{
     0% {
-        width: 168px;
+        width: 108px;
         height: 20px;
         opacity: 1;
         transform: translateX(0px);
     }
-    35% {
-        width: 108px;
+    50% {
+        width: 168px;
         height: 20px;
         transform-origin: right;
-        transform: translateX(132px);
+        transform: translateX(72px);
         opacity: 1;
 
     }
     100% {
-        width: 168px;
+        width: 108px;
         height: 20px;
         transform: translateX(0px);
         opacity: 1;
@@ -184,18 +184,38 @@
 }
 @keyframes border-moove{
     0% {
-        transform: translateX(0%);
+        width: 108px;
+        height: 1px;
+        transform: translateX(0px);
         opacity: 1;
     }
     50% {
-        transform: translateX(-100%);
+        width: 168px;
+        height: 1px;
+        transform: translateX(-72px);
         opacity: 1;
     }
     100% {
-        transform: translateX(0%);
+        width: 108px;
+        height: 1px;
+        transform: translateX(0px);
         opacity: 1;
     }
 }
+@keyframes border-discover{
+    0% {
+        width: 0px;
+        height: 1px;
+        opacity: 1;
+
+    }
+    100% {
+        width: 108px;
+        opacity: 1;
+    }
+}
+
+
 
 @keyframes nav-anim{
     0% {
@@ -512,26 +532,51 @@
     }
 }
 
+@keyframes variable-txt{
+    0%{
+        font-weight: 300;
+    }
+    100%{
+        font-weight: 900;
+
+    }
+}
+
+@keyframes variable-opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @keyframes variable-fonts{
     0%{
         font-weight: 500;
+        opacity: 1;
     }
     20%{
         font-family: 'Oddval-SemiBold';
+        opacity: 1;
     }
     40%{
         font-family: 'Oddval-SemiBoldItalic';
+        opacity: 1;
     }
     60%{
         font-family: 'Panchang-Variable';
+        opacity: 1;
     }
     80%{
         font-family: 'Panchang-Variable';
+        opacity: 1;
         font-weight: 800;
     }
 
     100%{
         font-weight: 500;
+        opacity: 1;
     }
 }
 
@@ -614,7 +659,7 @@
 
 
 
-@keyframes backshape{
+@keyframes blend-shape{
     0%{
         transform: translateY(0);
     }
@@ -625,6 +670,22 @@
         transform: translateY(0%);
     }
 }
+
+@keyframes blend-discover{
+    0%{
+        transform: translateY(50%);
+            opacity: 1;
+    }
+    50%{
+        transform: translateY(-2%);
+            opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+            opacity: 1;
+    }
+}
+
 
 
 //----- Page Anim -----

@@ -93,10 +93,10 @@ function animate() {
     //--
     delay;
   } else if (progress >= 70 && progress < 80) {
-    textLoader.innerHTML = '<p>Traduction de la page. refresh-package:fr:uk:de:pt:ch:nl:at</p>';
+    textLoader.innerHTML = '<p>Essai créatif numéro 1! refresh-package:fr:uk:de:pt:ch:nl:at</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Language';
+    p.innerText = '> Forme abstraite';
     resultLoader.appendChild(p);
     //--
     delay;

@@ -137,7 +137,7 @@
     padding-left: 20px;
     span{
         font-size: 30px;
-        font-weight: 500;
+        font-weight: 300;
         font-family: 'Satoshi-variable';
         color: $color-txt;
         text-transform: uppercase;
@@ -165,8 +165,8 @@
         font-size: 30px;
         font-family: 'Satoshi-Medium';
         color: $color-txt;
-        animation: variable-fonts 4s linear infinite;
-
+        animation: variable-fonts 4s linear 7600ms forwards;
+        opacity: 0;
     }
 
 }
@@ -192,7 +192,7 @@
     align-items: center;
     p{
         margin-left: 20px;
-        font-size: 30px;
+        font-size: 28px;
         font-family: 'Satoshi-Medium';
         color: $color-txt;
     }
@@ -203,43 +203,43 @@
 
 .txt-1{
     span:nth-child(1){
-    animation: bounce-text 1300ms ease-out 200ms 1 forwards;    
+    animation: bounce-text 1300ms ease-out 1100ms forwards;    
     }
     span:nth-child(2){
-    animation: bounce-text 1300ms ease-out 200ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1200ms forwards;
     }
     span:nth-child(3){
-    animation: bounce-text 1300ms ease-out 300ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1300ms forwards;
     }
     span:nth-child(4){
-    animation: bounce-text 1300ms ease-out 400ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1400ms forwards;
     }
     span:nth-child(5){
-    animation: bounce-text 1300ms ease-out 500ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1500ms forwards;
     }
     span:nth-child(6){
-    animation: bounce-text 1300ms ease-out 600ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1600ms forwards;
     }
     span:nth-child(7){
-    animation: bounce-text 1300ms ease-out 700ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1700ms forwards;
     }
     span:nth-child(8){
-    animation: bounce-text 1300ms ease-out 800ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1800ms forwards;
     }
     span:nth-child(9){
-    animation: bounce-text 1300ms ease-out 900ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 1900ms forwards;
     }
     span:nth-child(10){
-    animation: bounce-text 1300ms ease-out 1000ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 2000ms forwards;
     }
     span:nth-child(11){
-    animation: bounce-text 1300ms ease-out 1100ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 2100ms forwards;
     }
     span:nth-child(12){
-    animation: bounce-text 1300ms ease-out 1200ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 2200ms forwards;
     }
     span:nth-child(13){
-    animation: bounce-text 1300ms ease-out 1300ms 1 forwards;
+    animation: bounce-text 1300ms ease-out 2300ms forwards;
     }
 }
 
@@ -247,100 +247,117 @@
 
     span:nth-child(1){
     opacity: 0;
-    animation: run-text 1300ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 2200ms  forwards
+}
     span:nth-child(2){
     opacity: 0;
-    animation: run-text 1500ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 2400ms  forwards
+}
     span:nth-child(3){
     opacity: 0;
-    animation: run-text 1700ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 2600ms forwards
+ }
     span:nth-child(4){
     opacity: 0;
-    animation: run-text 1900ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 2800ms  forwards
+}
     span:nth-child(5){
     opacity: 0;
-    animation: run-text 2100ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 3000ms  forwards
+}
     span:nth-child(6){
     opacity: 0;
-    animation: run-text 2300ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 3200ms  forwards
+}
     span:nth-child(7){
     opacity: 0;
-    animation: run-text 2400ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 3400ms  forwards
+}
     span:nth-child(8){
     opacity: 0;
-    animation: run-text 2600ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 3600ms  forwards
+}
     span:nth-child(9){
     opacity: 0;
-    animation: run-text 2800ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 3800ms forwards
+ }
     span:nth-child(10){
     opacity: 0;
-    animation: run-text 3000ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 4000ms forwards 
+}
     span:nth-child(11){
     opacity: 0;
-    animation: run-text 3200ms ease-out 1000ms 1 forwards
-    }
+    animation: run-text 1300ms ease-out 4200ms forwards 
+}
 }
 
 .txt-3{
     span:nth-child(1){
-    animation: variable-txt 4s linear infinite;
+    animation: variable-txt 1100ms linear 4400ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(2){
-    animation: variable-txt 4s linear 300ms infinite;
+    animation: variable-txt 1100ms linear 4600ms  forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(3){
-    animation: variable-txt 4s linear 600ms infinite;
+    animation: variable-txt 1100ms linear 4800ms  forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(4){
-    animation: variable-txt 4s linear 900ms infinite;
+    animation: variable-txt 1100ms linear 5000ms  forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(5){
-    animation: variable-txt 4s linear 1200ms infinite;
+    animation: variable-txt 1100ms linear 5200ms  forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(6){
-    animation: variable-txt 4s linear 1500ms infinite;
+    animation: variable-txt 1100ms linear 5400ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(7){
-    animation: variable-txt 4s linear 1800ms infinite;
+    animation: variable-txt 1100ms linear 5600ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(8){
-    animation: variable-txt 4s linear 2100ms infinite;
+    animation: variable-txt 1100ms linear 5800ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(9){
-    animation: variable-txt 4s linear 2400ms infinite;
+    animation: variable-txt 1100ms linear 6000ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(10){
-    animation: variable-txt 4s linear 2700ms infinite;
+    animation: variable-txt 1100ms linear 6200ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(11){
-    animation: variable-txt 4s linear 3000ms infinite;
+    animation: variable-txt 1100ms linear 6400ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(12){
-    animation: variable-txt 4s linear 3300ms infinite;
+    animation: variable-txt 1100ms linear 6600ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(13){
-    animation: variable-txt 4s linear 3600ms infinite;
+    animation: variable-txt 1100ms linear 6800ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(14){
-    animation: variable-txt 4s linear 3900ms infinite;
+    animation: variable-txt 1100ms linear 7000ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(15){
-    animation: variable-txt 4s linear 4200ms infinite;
+    animation: variable-txt 1100ms linear 7200ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(16){
-    animation: variable-txt 4s linear 4500ms infinite;
+    animation: variable-txt 1100ms linear 7400ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
     span:nth-child(17){
-    animation: variable-txt 4s linear 4400ms infinite;
+    animation: variable-txt 1100ms linear 7600ms forwards, variable-opacity 200ms linear 4200ms forwards;
+    opacity: 0;
     }
 }

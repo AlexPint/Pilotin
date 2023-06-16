@@ -9,7 +9,7 @@
         height: 8px;
         top: 12px;
         left: -396px;
-        animation: blur-1 500ms linear forwards;
+        animation: blur-1 500ms linear 10400ms forwards;
 
     }
     &-2{
@@ -17,7 +17,7 @@
         height: 8px;
         top: 12px;
         left: -470px;
-        animation: blur-2 500ms linear forwards;
+        animation: blur-2 500ms linear 11000ms forwards;
 
     }
     &-3{
@@ -25,7 +25,7 @@
         height: 8px;
         top: 12px;
         left: -328px;
-        animation: blur-3 500ms linear forwards;
+        animation: blur-3 500ms linear 11000ms forwards;
     }
 }
 
@@ -68,8 +68,8 @@
             z-index: 1;
         }
         &-8{
-            width: 100%;
-            height: 100%;
+            width: 108px;
+            height: 20px;
             top: 0px;
             z-index: 1;
             backdrop-filter: blur(0.4px);

@@ -23,10 +23,15 @@
 }
 
 .border-blur{
-    width: 120px;
-    height: 2px;
-    background-color: white;
-    animation: border-moove 3s linear 15400s infinite forwards;
+    width: 108px;
+    height: 1px;
+    top: 9px;
+    right: 0px;
+    transform-origin: right;
+    background-color: $color-txt;
+    position: absolute;
+    opacity: 0;
+    animation: border-discover 1s linear 14400ms, border-moove 3s linear 15400ms infinite;
 }
 
 ul{
@@ -34,7 +39,7 @@ ul{
     height: auto;
     @include flex_CFS;
     li{
-        width: 100%;
+        width: 100%; 
         height: 100%;
         margin-bottom: 40px;
         opacity: 0;
