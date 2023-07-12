@@ -6,7 +6,7 @@
 //Math.random() renvoie un nombre décimal compris entre 0 (inclus) et 1 (exclus). Cela permet de générer une valeur aléatoire.
 //Le +1 est utilisé pour garantir que la valeur maximale soit incluse dans la plage de valeurs possibles.
 
-
+/*
 const noise = document.querySelector('.noise');
 
 
@@ -19,7 +19,7 @@ function randomPosition(min, max){
 setInterval(() => {
     randomPosition(-30, 100);
   }, 50);
-
+*/
 
 
 /*----- Animation loader terminal Page INDEX---- */
@@ -132,3 +132,16 @@ setTimeout(function() {
 }, 7400);
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const revealImage = document.querySelector(".gif_nosignal");
+  const thingsMenu = document.querySelector(".things_menu");
+
+  thingsMenu.addEventListener('click', (e) => {
+    e.preventDefault();
+    revealImage.classList.toggle('visible');
+
+    setTimeout(() => {
+      revealImage.classList.remove('visible');
+    }, 2000);
+  });
+});

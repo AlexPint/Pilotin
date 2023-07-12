@@ -41,7 +41,7 @@
             width: 87px;
             height: 42px;
             top: 0;
-            left: 280px;
+            left: 400px;
             z-index: -1;
             backdrop-filter: blur(0.4px);
         }
@@ -49,14 +49,14 @@
             width: 152px;
             height: 18px;
             top: 22px;
-            right: -192px;
+            right: -400px;
             z-index: 1;
         }
         &-6{
             width: 154px;
             height: 42px;
             top: -2px;
-            left: 280px;
+            left: 400px;
             z-index: 1;
             backdrop-filter: blur(1.4px);
         }
@@ -64,7 +64,7 @@
             width: 125px;
             height: 18px;
             top: 0px;
-            right: -192px;
+            right: -400px;
             z-index: 1;
         }
         &-8{
@@ -75,6 +75,67 @@
             backdrop-filter: blur(0.4px);
         }
     }
+
+//Blur Nav Menu selection
+
+
+.blur__appear{
+    &--1:hover{
+        .blur-4{
+            left: 0px;
+            transition: left 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--2:hover{
+        .blur-5{
+            right: 8px;
+            transition: right 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--3:hover{
+        .blur-6{
+            left: 0px;
+            transition: left 150ms linear;
+        }
+    }
+}
+
+.blur__appear{
+    &--4:hover{
+        .blur-7{
+            right: 0px;
+            transition: right 150ms linear;
+        }
+    }
+}
+//------- INDEX PAGE WITHOUT  -------//
+// Blur pour le header
+.blur{
+    &-23{
+        width: 196px;
+        height: 8px;
+        top: 12px;
+        left: 2px;
+    }
+    &-24{
+        width: 94px;
+        height: 8px;
+        top: 12px;
+        left: 36px;
+    }
+    &-25{
+        width: 128px;
+        height: 8px;
+        top: 12px;
+        left: 178px;
+    }
+}
 
 //------- ANIM PAGE -------//
 

@@ -16,34 +16,26 @@
     &__block{
         width: 100%;
         height: 100%;
-        padding: 16px;
+        position: relative;
+        border: solid 16px $color-block;
         @include flex_CC;
         background: $color-block;
         box-shadow: $shadow-block-1;
+        overflow: hidden;
     }
 
 
     &__effect{
-        width: 100%;
-        height: 100%;
-
-        position: relative;
-        overflow: hidden;
+        width: 150%;
+        height: 350%;
+        position: absolute;
         background-color: #5365BC;
-        &::before{
-            content: '';
-            width: 890px;
-            height: 890px;
-            position: absolute;
-            top: -250px;
-            left: -70px;
-            background:
-            linear-gradient(90deg, #4BF0E9, rgba(255, 0, 0, 0.123) 50.71%),
-            linear-gradient(200deg, #5365BC, rgba(255, 0, 0, 0.123) 70.71%),
-            linear-gradient(350deg, #fF5572, rgba(255, 0, 0, 0.123) 95.71%);
-            // background-size en dessous du Gradient sinon ca ne fonctionne pas
-            box-shadow: $shadow-block-1;
-            animation: gradient-moove 8s linear infinite alternate;
-        }
+        background:
+        linear-gradient(90deg, #4BF0E9, rgba(255, 0, 0, 0.123) 50.71%),
+        linear-gradient(200deg, #5365BC, rgba(255, 0, 0, 0.123) 70.71%),
+        linear-gradient(350deg, #fF5572, rgba(255, 0, 0, 0.123) 95.71%);
+        // background-size en dessous du Gradient sinon ca ne fonctionne pas
+        box-shadow: $shadow-block-1;
+        animation: gradient-moove 8s linear infinite alternate;
     }
 }

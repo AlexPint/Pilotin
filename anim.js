@@ -6,7 +6,7 @@
 //Math.random() renvoie un nombre décimal compris entre 0 (inclus) et 1 (exclus). Cela permet de générer une valeur aléatoire.
 //Le +1 est utilisé pour garantir que la valeur maximale soit incluse dans la plage de valeurs possibles.
 
-
+/*
 const noise = document.querySelector('.noise');
 
 
@@ -20,7 +20,7 @@ setInterval(() => {
     randomPosition(-30, 100);
   }, 50);
 
-
+*/
 
 
 /*----- Animation morphing Page ANIM---- */

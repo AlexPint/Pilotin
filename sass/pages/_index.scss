@@ -23,6 +23,53 @@
     @include flexR_end_spaceB; 
 }
 
+//------- FORME ABSTRAITE  -------//
+
+
+.blend{
+    width: auto;
+    height: 650px;
+    position: absolute;
+    z-index: -100;
+    top: 3%;
+    left: 32%;
+}
+
+
+
+@media only screen and (min-height: 800px){
+    .blend{
+        top: 8%;
+    }
+}
+@media only screen and (min-height: 900px){
+    .blend{
+        height: 750px;
+        left: 26%;
+    }
+}
+@media only screen and (min-height: 1100px){
+    .blend{
+        height: 800px;
+        left: 26%;
+        top: 18%;
+    }
+}
+        
+    @media only screen and (min-width: 1281px) and (max-width: 1440px){
+
+        }
+        
+@media only screen and (min-width: 1600px) {
+    .blend{
+        left: 40%;
+    }
+}
+        
+
+
+
+
 
 .date{
     opacity: 0;
@@ -51,6 +98,7 @@
 
 .social-network{
     @include flexR_end;
+
     a{
         width: auto;
         height: auto;
@@ -72,12 +120,7 @@
 
 
 
-.blend{
-    width: auto;
-    height: 90vh;
-    position: absolute;
-    left: 32%;
-}
+
 
 // revoir les noms puisqu'ils sont similaires a certains de la page anim
 .blend-shape{
@@ -267,3 +310,194 @@
     animation: blend-discover 1000ms ease 15200ms forwards, blend-shape 3s linear 21100ms infinite forwards;
         opacity: 0;
 }
+
+
+.gif_nosignal{
+    width: auto;
+    height: auto;
+    position: absolute;
+    z-index: 1000;
+    right: 25%;
+    top: 25%;
+    opacity: 0;
+    &.visible{
+        opacity: 1;
+    }
+}
+
+
+//------- INDEX PAGE WITHOUT  -------//
+
+
+
+.date--1{
+    @include flexR_JC;
+    p{
+        font-size: 20px;
+    }
+}
+
+.social-network--1{
+    @include flexR_end;
+    a{
+        width: auto;
+        height: auto;
+    }
+    svg{
+        width: 20px;
+        height: 20px;
+        margin-left: 10px ;
+    }
+}
+
+.blend-0{
+    transform-origin: top;
+    animation: blend-shape 3s linear 100ms infinite forwards;
+}
+
+.blend-1{
+    transform-origin: top;
+    animation: blend-shape 3s linear 200ms infinite forwards;
+}
+
+.blend-2{
+    transform-origin: top;
+    animation: blend-shape 3s linear 300ms infinite forwards;
+}
+.blend-3{
+    transform-origin: top;
+    animation: blend-shape 3s linear 400ms infinite forwards;
+}
+.blend-4{
+    transform-origin: top;
+    animation: blend-shape 3s linear 500ms infinite forwards;
+}
+.blend-5{
+    transform-origin: top;
+    animation: blend-shape 3s linear 600ms infinite forwards;
+}
+.blend-6{
+    transform-origin: top;
+    animation: blend-shape 3s linear 700ms infinite forwards;
+}
+.blend-7{
+    transform-origin: top;
+    animation: blend-shape 3s linear 800ms infinite forwards;
+}
+.blend-8{
+    transform-origin: top;
+    animation: blend-shape 3s linear 900ms infinite forwards;
+}
+.blend-9{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1000ms infinite forwards;
+}
+.blend-10{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1100ms infinite forwards;
+}
+.blend-11{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1200ms infinite forwards;
+}
+.blend-12{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1300ms infinite forwards;
+}
+.blend-13{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1400ms infinite forwards;
+}
+.blend-14{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1500ms infinite forwards;
+}
+.blend-15{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1600ms infinite forwards;
+}
+.blend-16{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1700ms infinite forwards;
+}
+.blend-17{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1800ms infinite forwards;
+}
+.blend-18{
+    transform-origin: top;
+    animation: blend-shape 3s linear 1900ms infinite forwards;
+}
+.blend-19{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2000ms infinite forwards;
+}
+.blend-20{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2100ms infinite forwards;
+}
+.blend-21{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2200ms infinite forwards;
+}
+.blend-22{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2300ms infinite forwards;
+}
+.blend-23{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2400ms infinite forwards;
+}
+.blend-24{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2500ms infinite forwards;
+}
+.blend-25{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2600ms infinite forwards;
+}
+.blend-26{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2700ms infinite forwards;
+}
+.blend-27{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2800ms infinite forwards;
+}
+.blend-28{
+    transform-origin: top;
+    animation: blend-shape 3s linear 2900ms infinite forwards;
+}
+.blend-29{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3000ms infinite forwards;
+}
+.blend-30{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3100ms infinite forwards;
+}
+.blend-31{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3200ms infinite forwards;
+}
+.blend-32{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3300ms infinite forwards;
+}
+.blend-33{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3400ms infinite forwards;
+}
+.blend-34{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3500ms infinite forwards;
+}
+.blend-35{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3600ms infinite forwards;
+}
+.blend-36{
+    transform-origin: top;
+    animation: blend-shape 3s linear 3700ms infinite forwards;
+}
+

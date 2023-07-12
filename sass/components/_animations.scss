@@ -287,62 +287,21 @@
     }
 }
 
-//-----Nav Menu selection -----
 
-
-.blur__appear{
-    &--1:hover{
-        .blur-4{
-            left: 0px;
-            transition: left 150ms linear;
-        }
-    }
-}
-
-.blur__appear{
-    &--2:hover{
-        .blur-5{
-            right: 8px;
-            transition: right 150ms linear;
-        }
-    }
-}
-
-.blur__appear{
-    &--3:hover{
-        .blur-6{
-            left: 0px;
-            transition: left 150ms linear;
-        }
-    }
-}
-
-.blur__appear{
-    &--4:hover{
-        .blur-7{
-            right: 0px;
-            transition: right 150ms linear;
-        }
-    }
-}
 
 //----- PAGE ANIM -----
  //----- Gradient Animation -----
 @keyframes gradient-moove{
     0%{
-        background-position: left top;
         transform: rotate(0deg);
     }
     33%{
-        background-position: right top;
         transform: rotate(120deg);
     }
     66%{
-        background-position: right bottom;
         transform: rotate(240deg);
     }
     100%{
-        background-position: left bottom;
         transform: rotate(360deg);
     }
 }
@@ -624,13 +583,13 @@
         transform: rotate(10deg);
     }
     100%{
-        transform: rotate(-50deg);
+        transform: rotate(-60deg);
     }
 }
 
 @keyframes back-shape2{
     0%{
-        transform: rotate(50deg);
+        transform: rotate(60deg);
     }
     100%{
         transform: rotate(10deg);
@@ -644,12 +603,12 @@
         transform: rotate(0deg);
     }
     100%{
-        transform: rotate(-50deg);
+        transform: rotate(-60deg);
     }
 }
 @keyframes gradient-anim{
     0%{
-        transform: rotate(50deg);
+        transform: rotate(60deg);
     }
     100%{
         transform: rotate(0deg);
@@ -784,6 +743,15 @@
 }
 
 @keyframes scrolling-hide{
+    0%{
+        opacity: 1;    
+    }
+    100%{
+        opacity: 0;    
+    }
+}
+
+@keyframes nosignal{
     0%{
         opacity: 1;    
     }
