@@ -1,35 +1,35 @@
 
 //------ UTILS ------
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
+@import "./utils/variables.scss";
+@import "./utils/functions.scss";
+@import "./utils/mixins.scss";
+@import "./utils/extensions.scss";
 
 //------ BASE ------
-@import "./base/base";
-@import "./base/typography";
+@import "./base/base.scss";
+@import "./base/typography.scss";
 
 //------ COMPONENTS ------
-@import "./components/animations";
-@import "./components/buttons";
-@import "./components/griadient";
-@import "./components/blur";
-@import "./components/morphing";
-@import "./components/terminal";
-@import "./components/watermark";
+@import "./components/animations.scss";
+@import "./components/buttons.scss";
+@import "./components/griadient.scss";
+@import "./components/blur.scss";
+@import "./components/morphing.scss";
+@import "./components/terminal.scss";
+@import "./components/watermark.scss";
 
 //------ LAYOUT ------
-@import "./layout/background";
-@import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
+@import "./layout/background.scss";
+@import "./layout/header.scss";
+@import "./layout/nav.scss";
+@import "./layout/container.scss";
+@import "./layout/form.scss";
 
 //------ PAGES ------
-@import "./pages/index";
-@import "./pages/anim";
-@import "./pages/typo";
-@import "./pages/about";
+@import "./pages/index.scss";
+@import "./pages/anim.scss";
+@import "./pages/typo.scss";
+@import "./pages/about.scss";
 
 
 
