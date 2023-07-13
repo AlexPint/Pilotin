@@ -3414,9 +3414,8 @@ p {
 /*----- ELEMENT DU GRID ANIME EN JS---- */
 /*----- Pour la reocnversion---- */
 .moove_txt {
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 43px;
-  font-weight: 700;
   position: relative;
 }
 .moove_txt::after {
@@ -3432,14 +3431,13 @@ p {
 #mooveParagraph {
   width: 200px;
   height: auto;
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 32px;
-  font-weight: 700;
 }
 
 /*----- Pour la carrière---- */
 .career_txt {
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 45px;
   font-weight: 700;
   position: relative;
@@ -3458,16 +3456,14 @@ p {
   width: 200px;
   height: auto;
   text-align: center;
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 32px;
-  font-weight: 700;
 }
 
 /*----- Pour la sport---- */
 .sports_txt {
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 45px;
-  font-weight: 700;
   position: relative;
 }
 .sports_txt::after {
@@ -3484,9 +3480,8 @@ p {
   width: 200px;
   height: auto;
   text-align: center;
-  font-family: "Satoshi-Variable";
+  font-family: "Satoshi-Bold";
   font-size: 32px;
-  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
