@@ -1,19 +1,19 @@
 //------ INDEX PAGE ------//
 .head_introduction{
     h1{
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         margin-bottom: 10px;
         opacity: 0;
         animation: intro-anim 200ms linear 9400ms 3 forwards;
     }
     h2{
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         margin-bottom: 5px;
         opacity: 0;
         animation: intro-anim 200ms linear 10400ms 3 forwards;
     }
     p{  
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         font-size: 25px;
         opacity: 0;
         animation: intro-anim 200ms linear 11000ms 3 forwards;
@@ -31,15 +31,15 @@
 //------ INDEX PAGE WITOUTH ANIM ------//
 .head_introduction--1{
     h1{
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         margin-bottom: 10px;
     }
     h2{
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         margin-bottom: 5px;
     }
     p{  
-        font-family: 'Satoshi-Variable', 'Satoshi-Bold';
+        font-family: 'Satoshi-Bold';
         font-size: 25px;
     }
 
