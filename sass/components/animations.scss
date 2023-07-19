@@ -289,51 +289,9 @@
 
 
 
+
+
 //----- PAGE ANIM -----
- //----- Gradient Animation -----
-@keyframes gradient-moove{
-    0%{
-        transform: rotate(0deg);
-    }
-    33%{
-        transform: rotate(120deg);
-    }
-    66%{
-        transform: rotate(240deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-
-//----- Morphing Animation -----
-
-@keyframes wave{
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    5%{
-        opacity: 0.5;
-    }
-    33%{
-        transform: scale(2);
-        opacity: 1;
-    }
-    66%{
-        transform: scale(4);
-        opacity: 1;
-    }
-    90%{
-        opacity: 0.5;
-    }
-    100%{
-        transform: scale(6);
-        opacity: 0;
-    }
-}
-
 
 //----- Header Anim Page Animation -----
 
@@ -363,10 +321,146 @@
 }
 
 
+//----- Morphing Animation ----- //
+
+@keyframes wave{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    5%{
+        opacity: 0.5;
+    }
+    33%{
+        transform: scale(2);
+        opacity: 1;
+    }
+    66%{
+        transform: scale(4);
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(6);
+        opacity: 0;
+    }
+}
+
+//----- Gradient Animation ----- //
+
+@keyframes gradient-moove{
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(120deg);
+    }
+    66%{
+        transform: rotate(240deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ //----- SCROLL Animation -----
+
+@keyframes morphing-anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+}
+
+@keyframes morphing-anim-reverse{
+    0%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes gradient-anim{
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes gradient-anim-reverse{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes back-shape{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(-60deg);
+    }
+}
+
+@keyframes back-shape2{
+    0%{
+        transform: rotate(60deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+@keyframes back-shape-reverse{
+    0%{
+        transform: rotate(-60deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes back-shape2-reverse{
+    0%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes scrolling-moove{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(68px);
+    }
+}
+
+//------ scroll button animation -------//
+
+@keyframes scrolling-hide{
+    0%{
+        opacity: 1;    
+    }
+    100%{
+        opacity: 0;    
+    }
+}
+
 
 //------ PAGE TYPO-------//
-//------ miror title animation -------//
 
+//------ miror title animation -------//
 
 @keyframes miror-movement{
     0% {
@@ -397,6 +491,9 @@
         transform: translateX(0);
     }
 }
+
+//------ Grid Typo animation -------//
+
 @keyframes typo-movement{
     0% {
         width: 746px;
@@ -426,22 +523,6 @@
         width: 746px;
     }
 }
-
-
-
-
-@keyframes loop-goback{
-    from{
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-
-    }
-    to{
-        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
-    }
-}
-
-
-//----- Page Typo -----
 
 @keyframes bounce-text{
     0%{
@@ -527,17 +608,13 @@
         font-family: 'Panchang-Variable';
         opacity: 1;
     }
-    80%{
-        font-family: 'Panchang-Variable';
-        opacity: 1;
-        font-weight: 800;
-    }
-
     100%{
-        font-weight: 500;
+        font-family: 'Panchang-Variable';
         opacity: 1;
     }
 }
+
+//----- BLUR Animation ALL PAGES ----- //
 
 @keyframes blur-1{
     0%{
@@ -547,7 +624,6 @@
         left: 2px;
     }
 }
-
 
 @keyframes blur-2{
     0%{
@@ -576,47 +652,7 @@
     }
 }
 
-
-
-@keyframes back-shape{
-    0%{
-        transform: rotate(10deg);
-    }
-    100%{
-        transform: rotate(-60deg);
-    }
-}
-
-@keyframes back-shape2{
-    0%{
-        transform: rotate(60deg);
-    }
-    100%{
-        transform: rotate(10deg);
-    }
-}
-
-
-
-@keyframes morphing-anim{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-60deg);
-    }
-}
-@keyframes gradient-anim{
-    0%{
-        transform: rotate(60deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-
-
+//----- Blend Shape Animation -----//
 
 @keyframes blend-shape{
     0%{
@@ -647,8 +683,28 @@
 
 
 
-//----- Page Anim -----
+//----- GIF Anim ----- //
 
+@keyframes nosignal{
+    0%{
+        opacity: 1;    
+    }
+    100%{
+        opacity: 0;    
+    }
+}
+
+//------ Go Back Button animation -------//
+
+@keyframes loop-goback{
+    from{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
 
 @keyframes touch{
     0%{
@@ -732,31 +788,3 @@
         opacity: 0;
     }
 }
-
-@keyframes scrolling-moove{
-    0%{
-        transform: translateY(0px);
-    }
-    100%{
-        transform: translateY(68px);
-    }
-}
-
-@keyframes scrolling-hide{
-    0%{
-        opacity: 1;    
-    }
-    100%{
-        opacity: 0;    
-    }
-}
-
-@keyframes nosignal{
-    0%{
-        opacity: 1;    
-    }
-    100%{
-        opacity: 0;    
-    }
-}
-

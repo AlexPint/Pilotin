@@ -64,7 +64,7 @@ function animate() {
     textLoader.innerHTML = '<p>Auteur. finalize:author-who-quién es-quem é esse-どなた</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Qui ?';
+    p.innerText = './* Qui */.';
     resultLoader.appendChild(p);
     //--
     delay;
@@ -72,7 +72,7 @@ function animate() {
     textLoader.innerHTML = '<p>Métier. finalize:p@r#o$f%es&s*i(i)o_n=</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Il fait quoi au juste ce monsieur ?';
+    p.innerText = './* Il fait quoi au juste ce monsieur ? */.';
     resultLoader.appendChild(p);
     //--
     delay;
@@ -80,7 +80,7 @@ function animate() {
     textLoader.innerHTML = '<p>Calcul des données. finalize: since|1234567890|</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Depuis quand ?';
+    p.innerText = './* Depuis quand ? */.';
     resultLoader.appendChild(p);
     //--
     delay;
@@ -88,7 +88,7 @@ function animate() {
     textLoader.innerHTML = '<p>Connexions annexes de la page. connexion:twitter_linkedin_what else</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Suivez-moi !';
+    p.innerText = './* Suivez-moi ! */.';
     resultLoader.appendChild(p);
     //--
     delay;
@@ -96,7 +96,7 @@ function animate() {
     textLoader.innerHTML = '<p>Essai créatif numéro 1! refresh-package:fr:uk:de:pt:ch:nl:at</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Forme abstraite';
+    p.innerText = './* Forme abstraite */.';
     resultLoader.appendChild(p);
     //--
     delay;
@@ -104,7 +104,7 @@ function animate() {
     textLoader.innerHTML = '<p>Navigation. finalize: réalisations/savoir-faire/book/</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Il sait faire quoi d\'autres ?';
+    p.innerText = './* Il sait faire quoi d\'autres ? */.';
     resultLoader.appendChild(p);
     //--
     delay += 2000;
@@ -112,7 +112,7 @@ function animate() {
     textLoader.innerHTML = '<p>Achievement Unloacked……</p>';
     //--
     const p = document.createElement('p');
-    p.innerText = '> Terminé !';
+    p.innerText = './* Terminé ! */.';
     resultLoader.appendChild(p);
     //--
     delay -= 2000;

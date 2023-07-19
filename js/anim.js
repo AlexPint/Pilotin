@@ -129,27 +129,55 @@ const headerTitleBis = document.querySelector('.header_title--1');
 const scrollHidden = document.querySelector('.scroll');
 
 
-function mooveBackShape() {
-  activeShapeMorphing.style.animation = `back-shape 3s linear 1 both`;
-  activeMorphing.style.animation = `morphing-anim 3s linear 1 both`;
-  activeShapeGradient.style.animation = `back-shape2 3s linear 1 both`;
-  activeGradient.style.animation = `gradient-anim 3s ease-in 1 both`;
+let isScrollingUp = false; // Variable to keep track of the scroll direction
 
-  headerTitle.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /"
-  headerTitleBis.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /"
-  scrollHidden.classList.add("hidden");
+const originalHeaderText = headerTitle.textContent;
+const originalHeaderTextBis = headerTitleBis.textContent;
+
+function mooveBackShape() {
+  if (isScrollingUp) {
+    activeShapeMorphing.style.animation = 'none';
+    activeMorphing.style.animation = 'none';
+    activeShapeGradient.style.animation = 'none';
+    activeGradient.style.animation = 'none';
+    // If scrolling up, reverse the animations
+    activeShapeMorphing.style.animation = `back-shape-reverse 3s linear 1 both`;
+    activeMorphing.style.animation = `morphing-anim-reverse 3s linear 1 both`;
+    activeShapeGradient.style.animation = `back-shape2-reverse 3s linear 1 both`;
+    activeGradient.style.animation = `gradient-anim-reverse 3s ease-in 1 both`;
+
+    headerTitle.textContent = originalHeaderText; // Set the original text content back
+    headerTitleBis.textContent = originalHeaderText; // Set the original text content back
+
+  } else {
+    
+    // If scrolling down, play the animations normally
+    activeShapeMorphing.style.animation = `back-shape 3s linear 1 both`;
+    activeMorphing.style.animation = `morphing-anim 3s linear 1 both`;
+    activeShapeGradient.style.animation = `back-shape2 3s linear 1 both`;
+    activeGradient.style.animation = `gradient-anim 3s ease-in 1 both`;
+
+    headerTitle.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /";
+    headerTitleBis.textContent = "gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient / gradient // gradient /";
+    //scrollHidden.classList.add("hidden");
+  }
+
 
 }
 
-// on prend en compte l'événement "wheel" associé au défilement plutot que le scroll puis que nous avons sur la page une propritété "overflow: hidden"
 window.addEventListener("wheel", function(event) {
-  // Récupérer la valeur du défilement horizontal
-  const deltaX = event.deltaX;
-
   // Récupérer la valeur du défilement vertical
   const deltaY = event.deltaY;
 
-  // Faire quelque chose avec les valeurs de défilement (par exemple, déclencher une animation)
-  console.log("Défilement détecté - deltaX:", deltaX, "deltaY:", deltaY);
-  mooveBackShape()
+  if (deltaY < 0) {
+    // Scrolling up
+    isScrollingUp = true;
+  } else {
+    // Scrolling down
+    isScrollingUp = false;
+  }
+
+  console.log("Défilement détecté - deltaY:", deltaY, "isScrollingUp:", isScrollingUp);
+  mooveBackShape();
 });
+
