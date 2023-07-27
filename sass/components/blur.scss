@@ -38,7 +38,7 @@
 // Blur pour le nav
 .blur{ 
         &-4{
-            width: 87px;
+            width: 93px;
             height: 42px;
             top: 0;
             left: 400px;
@@ -46,14 +46,14 @@
             backdrop-filter: blur(0.4px);
         }
         &-5{
-            width: 152px;
+            width: 166px;
             height: 18px;
             top: 22px;
             right: -400px;
             z-index: 1;
         }
         &-6{
-            width: 154px;
+            width: 163px;
             height: 42px;
             top: -2px;
             left: 400px;
@@ -61,7 +61,7 @@
             backdrop-filter: blur(1.4px);
         }
         &-7{
-            width: 125px;
+            width: 130px;
             height: 18px;
             top: 0px;
             right: -400px;
@@ -91,7 +91,7 @@
 .blur__appear{
     &--2:hover{
         .blur-5{
-            right: 8px;
+            right: 0px;
             transition: right 150ms linear;
         }
     }

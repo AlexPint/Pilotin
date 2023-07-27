@@ -914,6 +914,13 @@ p {
   z-index: 2000;
 }
 
+#ball2 {
+  right: 0;
+  bottom: 0;
+  margin: 0 25px 25px 0;
+  z-index: 2000;
+}
+
 .goback {
   width: 50px;
   height: 70px;
@@ -1066,7 +1073,7 @@ p {
 }
 
 .blur-4 {
-  width: 87px;
+  width: 93px;
   height: 42px;
   top: 0;
   left: 400px;
@@ -1074,14 +1081,14 @@ p {
   backdrop-filter: blur(0.4px);
 }
 .blur-5 {
-  width: 152px;
+  width: 166px;
   height: 18px;
   top: 22px;
   right: -400px;
   z-index: 1;
 }
 .blur-6 {
-  width: 154px;
+  width: 163px;
   height: 42px;
   top: -2px;
   left: 400px;
@@ -1089,7 +1096,7 @@ p {
   backdrop-filter: blur(1.4px);
 }
 .blur-7 {
-  width: 125px;
+  width: 130px;
   height: 18px;
   top: 0px;
   right: -400px;
@@ -1109,7 +1116,7 @@ p {
 }
 
 .blur__appear--2:hover .blur-5 {
-  right: 8px;
+  right: 0px;
   transition: right 150ms linear;
 }
 
@@ -2131,11 +2138,11 @@ p {
   margin-bottom: 10px;
 }
 .head_introduction--1 h2 {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi-Medium";
   margin-bottom: 5px;
 }
 .head_introduction--1 p {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi-Medium";
   font-size: 25px;
 }
 
@@ -2270,7 +2277,7 @@ p {
   z-index: 300;
 }
 .link ul li p {
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi-Bold";
   font-size: 35px;
 }
 .link ul li:nth-child(1) {
@@ -2345,7 +2352,7 @@ p {
   z-index: 300;
 }
 .linknav--1 ul li p {
-  font-family: "Satoshi-Medium";
+  font-family: "Satoshi-Bold";
   font-size: 35px;
 }
 
