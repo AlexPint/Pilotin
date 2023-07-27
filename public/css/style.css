@@ -2114,13 +2114,13 @@ p {
   animation: intro-anim 200ms linear 9400ms 3 forwards;
 }
 .head_introduction h2 {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi-Medium";
   margin-bottom: 5px;
   opacity: 0;
   animation: intro-anim 200ms linear 10400ms 3 forwards;
 }
 .head_introduction p {
-  font-family: "Satoshi-Bold";
+  font-family: "Satoshi-Medium";
   font-size: 25px;
   opacity: 0;
   animation: intro-anim 200ms linear 11000ms 3 forwards;
