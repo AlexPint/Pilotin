@@ -1,503 +1,129 @@
+#wrapper{
+    width: 1440px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto; /* Centre horizontalement */
+}
+
 #header_index{
     width: 100%;
-    height: 20%;
-    margin-bottom: 2%;
+    height: auto;
 }
   
 #main_index{
     width: 100%;
-    height: 65%;
-    position: relative;
+    height: auto;
 }
   
 #footer_index{
     width: 100%;
-    height: 9%;
+    height: auto;
 }
 
 
-.footer_container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    @include flexR_end_spaceB; 
-}
-
-//------- FORME ABSTRAITE  -------//
-
-
-.blend{
-    width: auto;
-    height: 650px;
-    position: absolute;
-    z-index: -100;
-    top: 3%;
-    left: 32%;
-}
 
 
 
 @media only screen and (min-height: 800px){
-    .blend{
-        top: 8%;
-    }
+
 }
+
 @media only screen and (min-height: 900px){
-    .blend{
-        height: 750px;
-        left: 26%;
-    }
+
 }
 @media only screen and (min-height: 1100px){
-    .blend{
-        height: 800px;
-        left: 26%;
-        top: 18%;
-    }
 }
         
-    @media only screen and (min-width: 1281px) and (max-width: 1440px){
+@media only screen and (min-width: 1281px) and (max-width: 1440px){
 
-        }
+}
         
 @media only screen and (min-width: 1600px) {
-    .blend{
-        left: 40%;
-    }
-}
-        
 
-
-
-
-
-.date{
-    opacity: 0;
-    animation: date-anim 200ms linear 11400ms 3 forwards;
-    @include flexR_JC;
-    p{
-        font-size: 20px;
-    }
-}
-
-
-.vertical_bar{
-    width: 1px;
-    height: 12px;
-    margin-left: 7px;
-    margin-right: 7px;
-    border: solid 1px $color-txt;
-    &--2{
-        @extend .vertical_bar;
-        height: 20px;
-
-    }
 }
 
 
 
-.social-network{
-    @include flexR_end;
+#intoduction{
+   width: 1440px;
+   height: auto;
+   padding: 93px 80px 93px 80px;
+   background: $gradient-body;
+   @include flexrow;
+}
 
-    a{
-        width: auto;
-        height: auto;
-    }
-    svg{
-        width: 20px;
-        height: 20px;
-        margin-left: 10px ;
-        opacity: 0;
-    }
-    .social__anim{
-        animation: icon-anim 200ms linear 12400ms 3 forwards;
-        &--1{
-            animation: icon-anim2 200ms linear 12400ms 3 forwards;
+.intro_container{
+    width: 673px;
+    height: 100%;
+    &-txt{
+        width: 553px;
+        margin-bottom: $margin;
+        h1{
+            margin-bottom: $margin;
+            color: $white;
+            span{
+                color: $primary;
+            }
+        }
+        p{
+            color: $white;
+            margin-bottom: $margin;
         }
     }
+    &-customer{
+        width: 100%;
+        @include flexrowspaceB;
+    }
 }
 
-
-
-
-
-
-// revoir les noms puisqu'ils sont similaires a certains de la page anim
-.blend-shape{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13400ms forwards, blend-shape 3s linear 17500ms infinite forwards;
-    opacity: 0;
-}
-
-.blend-shape-1{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13450ms forwards, blend-shape 3s linear 17600ms infinite forwards;
-        opacity: 0;
-}
-
-.blend-shape-2{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13500ms forwards, blend-shape 3s linear 17700ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-3{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13550ms forwards, blend-shape 3s linear 17800ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-4{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13600ms forwards, blend-shape 3s linear 17900ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-5{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13650ms forwards, blend-shape 3s linear 18000ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-6{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13700ms forwards, blend-shape 3s linear 18100ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-7{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13750ms forwards, blend-shape 3s linear 18200ms infinite forwards;
-    opacity: 0;
-}
-.blend-shape-8{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13800ms forwards, blend-shape 3s linear 18300ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-9{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13850ms forwards, blend-shape 3s linear 18400ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-10{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13900ms forwards, blend-shape 3s linear 18500ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-11{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 13950ms forwards, blend-shape 3s linear 18600ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-12{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14000ms forwards, blend-shape 3s linear 18700ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-13{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14050ms forwards, blend-shape 3s linear 18800ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-14{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14100ms forwards, blend-shape 3s linear 18900ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-15{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14150ms forwards, blend-shape 3s linear 19000ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-16{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14200ms forwards, blend-shape 3s linear 19100ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-17{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14250ms forwards, blend-shape 3s linear 19200ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-18{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14300ms forwards, blend-shape 3s linear 19300ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-19{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14350ms forwards, blend-shape 3s linear 19400ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-20{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14400ms forwards, blend-shape 3s linear 19500ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-21{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14450ms forwards, blend-shape 3s linear 19600ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-22{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14500ms forwards, blend-shape 3s linear 19700ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-23{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14550ms forwards, blend-shape 3s linear 19800ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-24{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14600ms forwards, blend-shape 3s linear 19900ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-25{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14650ms forwards, blend-shape 3s linear 20000ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-26{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14700ms forwards, blend-shape 3s linear 20100ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-27{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14750ms forwards, blend-shape 3s linear 20200ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-28{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14800ms forwards, blend-shape 3s linear 20300ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-29{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14850ms forwards, blend-shape 3s linear 20400ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-30{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14900ms forwards, blend-shape 3s linear 20500ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-31{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 14950ms forwards, blend-shape 3s linear 20600ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-32{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 15000ms forwards, blend-shape 3s linear 20700ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-33{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 15050ms forwards, blend-shape 3s linear 20800ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-34{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 15100ms forwards, blend-shape 3s linear 20900ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-35{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 15150ms forwards, blend-shape 3s linear 21000ms infinite forwards;
-        opacity: 0;
-}
-.blend-shape-36{
-    transform-origin: top;
-    animation: blend-discover 1000ms ease 15200ms forwards, blend-shape 3s linear 21100ms infinite forwards;
-        opacity: 0;
-}
-
-
-.gif_nosignal{
-    width: auto;
+.intro_illustration{
+    width: 587px;
     height: auto;
-    position: absolute;
-    z-index: 1000;
-    right: 25%;
-    top: 25%;
-    opacity: 0;
-    &.visible{
-        opacity: 1;
+    position: relative;
+    overflow: hidden;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 }
 
-
-//------- INDEX PAGE WITHOUT  -------//
-
-
-
-.date--1{
-    @include flexR_JC;
-    p{
-        font-size: 20px;
-    }
-}
-
-.social-network--1{
-    @include flexR_end;
-    a{
-        width: auto;
+.intro_banner{
+    width: 100%;
+    height: 230px;
+    position: relative;
+    background: $gradient-body;
+    @include flexcentercenter;
+    
+    &-txt{
+        width: 100%;
         height: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        transform: rotate(-4deg);
+        p{
+            animation: banner 10s linear infinite forwards;
+            font-size: 160px;
+            font-weight: 500;
+            color: $primary;
+            font-family:'Outfit', Verdana, Arial, Open;
+            span{
+                -webkit-text-stroke: 3px;
+                -webkit-text-stroke-color: $primary;
+                color: transparent;
+            }
+        }
+
     }
-    svg{
-        width: 20px;
-        height: 20px;
-        margin-left: 10px ;
-    }
 }
 
-.blend-0{
-    transform-origin: top;
-    animation: blend-shape 3s linear 100ms infinite forwards;
-}
-
-.blend-1{
-    transform-origin: top;
-    animation: blend-shape 3s linear 200ms infinite forwards;
-}
-
-.blend-2{
-    transform-origin: top;
-    animation: blend-shape 3s linear 300ms infinite forwards;
-}
-.blend-3{
-    transform-origin: top;
-    animation: blend-shape 3s linear 400ms infinite forwards;
-}
-.blend-4{
-    transform-origin: top;
-    animation: blend-shape 3s linear 500ms infinite forwards;
-}
-.blend-5{
-    transform-origin: top;
-    animation: blend-shape 3s linear 600ms infinite forwards;
-}
-.blend-6{
-    transform-origin: top;
-    animation: blend-shape 3s linear 700ms infinite forwards;
-}
-.blend-7{
-    transform-origin: top;
-    animation: blend-shape 3s linear 800ms infinite forwards;
-}
-.blend-8{
-    transform-origin: top;
-    animation: blend-shape 3s linear 900ms infinite forwards;
-}
-.blend-9{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1000ms infinite forwards;
-}
-.blend-10{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1100ms infinite forwards;
-}
-.blend-11{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1200ms infinite forwards;
-}
-.blend-12{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1300ms infinite forwards;
-}
-.blend-13{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1400ms infinite forwards;
-}
-.blend-14{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1500ms infinite forwards;
-}
-.blend-15{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1600ms infinite forwards;
-}
-.blend-16{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1700ms infinite forwards;
-}
-.blend-17{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1800ms infinite forwards;
-}
-.blend-18{
-    transform-origin: top;
-    animation: blend-shape 3s linear 1900ms infinite forwards;
-}
-.blend-19{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2000ms infinite forwards;
-}
-.blend-20{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2100ms infinite forwards;
-}
-.blend-21{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2200ms infinite forwards;
-}
-.blend-22{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2300ms infinite forwards;
-}
-.blend-23{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2400ms infinite forwards;
-}
-.blend-24{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2500ms infinite forwards;
-}
-.blend-25{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2600ms infinite forwards;
-}
-.blend-26{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2700ms infinite forwards;
-}
-.blend-27{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2800ms infinite forwards;
-}
-.blend-28{
-    transform-origin: top;
-    animation: blend-shape 3s linear 2900ms infinite forwards;
-}
-.blend-29{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3000ms infinite forwards;
-}
-.blend-30{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3100ms infinite forwards;
-}
-.blend-31{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3200ms infinite forwards;
-}
-.blend-32{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3300ms infinite forwards;
-}
-.blend-33{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3400ms infinite forwards;
-}
-.blend-34{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3500ms infinite forwards;
-}
-.blend-35{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3600ms infinite forwards;
-}
-.blend-36{
-    transform-origin: top;
-    animation: blend-shape 3s linear 3700ms infinite forwards;
+.intro_polygon{
+    width: 100%;
+    height: 86px;
+    position: relative;
+    background: $gradient-body;
+    clip-path: polygon(0 0, 100% 0, 100% 2%, 0% 100%);
+    bottom: 1px;
 }
 

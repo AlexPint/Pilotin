@@ -1,150 +1,61 @@
-//----- Page Anim -----
-
-
-.goback_button{
-    width: 50px;
-    height: 50px;
-    border-radius: 25%;
-    border: solid 1px $color-txt;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    -webkit-perspective: 450px;
-    -moz-perspective : 450px; 
-    perspective: 450px;
-
-    animation: loop-goback 10s linear infinite ;
-
-    transform-style: preserve-3d;
-
-    .container{
-        width: 40px;
-        height: 40px;
-        border-radius: 25%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        transform-style: preserve-3d;;
-        transform: translateZ(0px);
-        transition: all 200ms linear;
-
-    }
-    p{
-        transform-style: preserve-3d;
-        transform: translateZ(0px);
+.menu_button{
+    width: auto;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 60px;
+    //background-color: $primary100;
+    @include flexrowcentercenter;
+    &:hover{
+        background-color: $primary100;
     }
 }
 
-#ball1 {
-    left:0; 
-    top:0;
-    z-index: 2000;
+.primary_button{
+    width: auto;
+    height: 48px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 60px;
+    background-color: $primary;
+    @include flexrowcentercenter;
+    font-size: 16px;
+    line-height: 24px; 
+    font-weight: 500;
+    color: $black;
+    font-family:'Outfit', Verdana, Arial, Open;    
 }
 
-#ball2 {
-    right: 0;
-    bottom: 0;
-    margin: 0 25px 25px 0;
-    z-index: 2000;
-}
-
-.goback{
-    width: 50px;
-    height: 70px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .test{
-        display: flex;
-        flex-direction: row;
-    }
-    .touch{
-        margin-top: 10px;
-        text-align: center;
-        animation: touch 500ms linear 6s forwards, touch1 700ms linear 10s forwards;
-        opacity: 0;
-    }
-    .touch_me{
-        margin-top: 10px;
-        text-align: center;
-        opacity: 0;
-        animation: touchme 500ms linear 6100ms forwards, touchme1 500ms linear 10100ms forwards;
-    }
-
+.secondary_button{
+    width: auto;
+    height: 48px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 60px;
+    background-color: $secondary;
+    @include flexrowcentercenter;
+    font-size: 16px;
+    line-height: 24px; 
+    font-weight: 500;
+    color: $black;
+    font-family:'Outfit', Verdana, Arial, Open;
+    text-transform: uppercase;
+    &-1{
+        @extend .secondary_button;
+        text-transform: none; 
+    }  
 }
 
 
-
-.goback_button:hover{
-    transform: rotateX(20deg) rotateY(10deg) rotateZ(-10deg);
-    animation: none;
-    .container{
-        background-color: $color-block;
-        transform-style: preserve-3d;
-        transform: translateZ(20px);
-    }
-    p{
-        transform: translateZ(6px);
-    }
-}
-.goback_button:active{
-    .container{
-        background-color: $color-block;
-
-        transform-style: preserve-3d;
-        transform: translateZ(10px);
-        box-shadow: $outside-shadow;
-
-    }
+.category_button{
+    @include flexrowcentercenter;
+    width: auto;
+    height: 32px;
+    border-radius: 5px;
+    border: solid 1px $primary;
+    padding: 6px 12px 6px 12px;
+    font-size: 14px;
+    line-height: 20px; 
+    font-weight: 500;
+    color: $primary;
+    font-family:'Outfit', Verdana, Arial, Open;
 
 }
 
-.margin_stop{
-    position: absolute;
-    left: 0;
-    margin: 3rem 0 0 3rem;
-}
-
-
-.scroll{
-    position: absolute;
-    right: 50px;
-    display: flex;
-    flex-direction: row;
-    &_box{
-        width: 6px;
-        height: 80px;
-        border-radius: 6px;
-        //padding: 4px 0 4px 0;
-        background-color: rgba($color-txt, 0.1);
-        backdrop-filter: blur(2px);
-        &-curser{
-            width: 5px;
-            height: 11px;
-            border: solid 0.8px $color-txt;
-            border-radius: 5px;
-            animation: scrolling-moove 2s cubic-bezier(0,.68,1,.28) alternate infinite;
-        }
-    }
-    &_txt{
-        position: relative;
-        margin-left: 2px;
-        p{
-            position: absolute;
-            text-orientation: upright;
-            writing-mode: vertical-rl;
-            font-size: 11px;
-            font-family: 'Satoshi-Light';
-        }
-    }
-}
-
-.hidden{
-    animation: scrolling-hide 500ms ease forwards;
-}

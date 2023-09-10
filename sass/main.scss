@@ -12,23 +12,19 @@
 //------ COMPONENTS ------
 @import "./components/animations.scss";
 @import "./components/buttons.scss";
-@import "./components/griadient.scss";
-@import "./components/blur.scss";
-@import "./components/morphing.scss";
-@import "./components/terminal.scss";
-@import "./components/watermark.scss";
+
 
 //------ LAYOUT ------
-@import "./layout/background.scss";
 @import "./layout/header.scss";
 @import "./layout/nav.scss";
-@import "./layout/container.scss";
-@import "./layout/form.scss";
+@import "./layout/carousel.scss";
+@import "./layout/blog.scss";
+@import "./layout/illustration.scss";
+@import "./layout/description.scss";
+@import "./layout/stayintouch.scss";
+@import "./layout/footer.scss";
 
 //------ PAGES ------
 @import "./pages/index.scss";
-@import "./pages/anim.scss";
-@import "./pages/typo.scss";
-@import "./pages/about.scss";
 
 

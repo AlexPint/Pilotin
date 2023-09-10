@@ -1,0 +1,66 @@
+.footer_container{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    position: relative;
+    @include flexrowspaceB;
+    h5{
+        color: $primary700;
+        margin-bottom: 24px;
+    }
+    a{
+        font-size: 16px;
+        line-height: 24px; 
+        font-weight: 500;
+        font-family:'Outfit', Verdana, Arial, Open;
+        color: $primary;
+
+    }
+    li{
+        margin-bottom: 24px;
+    }
+}
+
+.footer_link{
+    @include flexcolumnflexstart;
+}
+
+.footer_margin{
+    margin-bottom: 10px;
+}
+
+
+.footer_end{
+    width: 100%;
+    height: 72px;
+    padding: 24px 80px 24px 80px;
+    background-color: $neutral100;
+    @include flexrowcenterspaceB;
+    position: relative
+}
+
+.footer_mention{
+    @include flexrowcenter2;
+}
+.footer_editor{
+    @include flexrowcenter2;
+    a{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.footer_elipse{
+    position: absolute;
+    top: -120px;
+    right: -140px;
+    z-index: -1;
+    width: 22%;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.relative{
+    overflow: hidden;
+    position: relative;
+}

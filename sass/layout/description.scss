@@ -1,0 +1,55 @@
+
+#description_container{
+    width: 100%;
+    height: auto;
+    @include flexcolumn;
+    position: relative;
+}
+
+.description{
+    width: 100%;
+    height: auto;
+    padding: 60px 189px 60px 189px;
+    position: relative;
+    @include flexrowspaceB;
+    &_title{
+        width: 48%;
+        height: auto;
+    }
+    &_txt{
+        width: 48%;
+        height: auto;
+        p{
+            margin-bottom: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+.back_shape{
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.back_color{
+    width: 100%;
+    height: 221px;
+    margin-top: 220px;
+    background: $gradient-body;
+}
+
+.back_photo{
+    width: 1062px;
+    height: 423px;
+    right: 189px;
+    bottom: 0px;
+    position: absolute;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+

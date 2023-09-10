@@ -1,43 +1,83 @@
 
-@mixin flexR{
+@mixin flexrow{
     display: flex;
     flex-direction: row;
 }
 
-@mixin flexR_JC{
+@mixin flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexcolumncenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin flexcolumncenter2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexrowcenter{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-@mixin flexR_AC{
+@mixin flexrowcenter2{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-@mixin flex_CC{
+@mixin flexrowspaceB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin flexrowspaceBcenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexrowcentercenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexcentercenter{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@mixin flex_CCC{
+@mixin flexcolumncentercenter{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-@mixin flex_CFS{
+@mixin flexcolumnspaceB{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexcolumnflexstart{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-@mixin flexR_spaceB{
+@mixin flexrowspaceB{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-@mixin flexR_center_spaceB{
+@mixin flexrowcenterspaceB{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,40 +85,36 @@
 }
 
 
-@mixin row-start-center{
+@mixin flexrowstartcenter{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-@mixin flexR_end_spaceB{
+@mixin flexrowspaceBflexend{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-@mixin flexR_end{
+@mixin flexrowflexendcenter{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
-@mixin flexR_endend{
+@mixin flexrowflexendflexend{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
 }
-@mixin flexC_end{
+@mixin flexcolumnflexendcenter{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 }
 
-@mixin flexC{
-    display: flex;
-    flex-direction: column;
-}

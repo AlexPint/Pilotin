@@ -1,0 +1,120 @@
+#carousel{
+    width: 100%;
+    height: 902px;
+    position: relative;
+    @include flexcolumncentercenter;
+}
+
+.carousel_title{
+    width: 100%;
+    height: auto;
+    @include flexcolumncentercenter;
+    margin-bottom: 40px;
+    h3{
+        line-height: 58px;
+    }
+
+}
+
+.carousel_elipse{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.carousel_shape{
+    position: absolute;
+    bottom: -50px;
+    left: -7px;
+    z-index: 10;
+}
+.carousel_container{
+    width: 1280px;
+    height: 600px;
+    border-radius: 25px;
+    background: $black;
+    @include flexrow;
+}
+
+.carousel_block{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px 0 0 25px;
+    @include flexcentercenter;
+    //border: solid 2px yellow;
+    img {
+        position: absolute;
+        -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
+        mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        right: -150px;
+
+        }
+    svg{
+        z-index: 10;
+        fill: $primary;
+    }
+        
+}
+
+
+.carousel_block-1{
+    width: 50%;
+    height: 100%;
+    padding: 80px 50px 80px 80px;
+    border-radius: 0 25px 25px 0;
+    @include flexcolumncenter;
+    //border: solid 2px yellow;
+    h5{
+        color: $primary;
+        margin-bottom: 20px;
+
+    }
+    h4{
+        color: $white;
+        margin-bottom: 20px;
+
+    }
+    .carousel_logo{
+        width: 98px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+.carousel_arrow{
+    margin-bottom: 50px;
+}
+.carousel_arrow-R{
+    transform: scaleX(-1);
+    margin-left: 10px;
+}
+
+.carousel_page{
+    width: auto;
+    height: 10px;
+    @include flexrow;
+    position: relative;
+}
+
+.carousel_circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: $neutral;
+    position: relative;
+}
+
+.carousel_circle-on{
+    width: 23px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: $primary;
+    position: relative;
+}
+
+
+

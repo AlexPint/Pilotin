@@ -1,66 +1,58 @@
 
-//------ COLORS ------
+/*------ COLORS ------*/
 
-$color-back:linear-gradient(145deg, #2740FD 20%, #2039f7  40%, #003FB7 60%,  #040a6e 100%);
-$color-back2:linear-gradient(145deg, #393f4e 20%, #2a3141  40%, #1a202f 60%,  #090d15 100%);
-$color-txt: #CDDDEF;
-$color-block: #090d15;
+//BASICS 
+$black: #072038;
+$white: #FFFFFF;
+$color-txt: #072038;
 
-/*
-$color-primary: ;
-$color-secondary: ;
-
-$color-white: ;
-*/
-
-//------ BOX-SHADOW ------
-
-$shadow-block: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-$shadow-block-4: rgba(0, 0, 0, 0.60) 0px 3px 8px;
-
-$shadow-block-1: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
-$shadow-block-2: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-
-$shadow-block-3: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+//THEME 
+$primary100: #F0FDFF;
+$primary-light: #56CFE2;
+$primary: #26C1D9;
+$primary-dark: #1D96A9;
+$primary700: #156B79;
 
 
-//------ Morphing Colors ------
-//blue
-$primary-light: #8abdff;
-$primary: #c8d8eb;
-$primary-dark: #1d0053;
+$secondary-light: #FEA091;
+$secondary: #FD7762;
+$secondary-dark: #E46B58;
 
-//white
-$grey-light-1: #E4EBF5;
-$grey-light-2: #c8d0e7;
-$grey-light-3: #bec8e4;
-$grey-light-4: #9baacf;
+$neutral100: #F7FAFB;
+$neutral-light: #CCDFE0;
+$neutral: #A0BDC0;
+$neutral-dark: #729497;
 
-//black
-$grey-dark-1: #393f4e;
-$grey-dark-2: #2a3141;
-$grey-dark-3: #1a202f;
-$grey-dark-4: #090d15;
+$gradient: linear-gradient(90deg, rgba(38,193,217,1) 0%, rgba(182,227,242,1) 100%);
+$gradient-body: linear-gradient(90deg, rgba(7,32,56,1) 0%, rgba(10,53,95,1) 100%);
 
-//box shadow
-$shadow: 
-.3rem .3rem .6rem black, 
--.2rem -.2rem .5rem $grey-dark-3;
+//STATUS
+$info-light: #E3F5FF;
+$info: #2F97ED;
+$info-dark: #0F62A8;
 
-$inner-shadow: 
-inset .2rem .2rem .5rem black, 
-inset -.2rem -.2rem .5rem $grey-dark-3;
+$warning-light: #FEFCBF;
+$warning: #FFC93E;
+$warning-dark: #C07E1A;
 
-$inner-shadow-2: 
-inset .2rem .2rem .5rem $primary-dark, 
-inset -.2rem -.2rem .5rem $primary-light;
- 
+$error-light: #FED7D7;
+$error: #E73434;
+$error-dark: #AE1616;
 
-$outside-shadow: 
-.2rem .2rem .5rem $primary-dark; 
+$sucess-light: #C9F3DA;
+$sucess: #2FBE2C;
+$sucess-dark: #067503;
 
-//Animation
-$typing-anim: letter-typing 200ms steps(1) forwards;
-$case-anim: case-typing 200ms steps(1) forwards;
+
+/*------ TYPO ------*/
+
+$menu: 16px/24px 500 $black 'Outfit', Verdana, Arial, Open;
+
+
+/*------ Margin ------*/
+
+$margin: 35px;
+
+/*------ icon ------*/
+
+$iconlist: 18px;

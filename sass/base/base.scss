@@ -27,8 +27,8 @@ time, mark, audio, video {
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
 }
 
 html {
@@ -48,6 +48,8 @@ ol, ul{
     list-style: none; 
 }
 a{
+    width: auto;
+    height: auto;
     text-decoration: none;
     cursor: pointer;
     color: $color-txt;
@@ -70,22 +72,50 @@ a:hover {
 }
 
 h1{
-  font-family: 'Satoshi-Bold', Verdana, Arial, Open;
-  font-size: 40px;
+  font-family: 'Outfit', Verdana, Arial, Open;
+  font-size: 72px;
   color: $color-txt;
+  font-weight: 600;
 }
-h2     {
-  font-family: 'Satoshi-Medium', Verdana, Arial, Open;
-  font-size: 25px;
+
+h2{
+  font-family: 'Outfit', Verdana, Arial, Open;
+  font-size: 60px;
   color: $color-txt;
+  font-weight: 500;
 }
-h3, h4, h5, h6{
-  font-family: 'Satoshi-Medium', Verdana, Arial, Open;
+
+h3{
+  font-family: 'Outfit', Verdana, Arial, Open;
+  font-size: 48px;
+  color: $color-txt;
+  font-weight: 500;
+}
+
+h4{
+  font-family: 'Outfit', Verdana, Arial, Open;
+  font-size: 36px;
+  color: $color-txt;
+  font-weight: 500;
+}
+
+h5{
+  font-family: 'Outfit', Verdana, Arial, Open;
   font-size: 20px;
   color: $color-txt;
+  font-weight: 500;
 }
-p{
-  font-family: 'Satoshi-Regular', Verdana, Arial, Open;
-  font-size: 15px;
+
+h6{
+  font-family: 'Outfit', Verdana, Arial, Open;
+  font-size: 18px;
   color: $color-txt;
+  font-weight: 500;
+}
+
+p{
+  font-family: 'Porpora', Verdana, Arial, Open;
+  font-size: 18px;
+  color: $color-txt;
+  font-weight: 400;
 }

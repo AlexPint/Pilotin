@@ -1,0 +1,112 @@
+#illustration{
+    width: 100%;
+    height: auto;
+    padding: 128px 80px 128px 80px;
+    background: $gradient-body;
+    h2{
+        text-align: center;
+        color: $white;
+        margin-bottom: 35px;
+        span{
+            color: $primary;
+        }
+    }
+}
+
+.illustration_container{
+    width: 100%;
+    height: 780px;
+    @include flexrow;
+    margin-bottom: 40px;
+    }
+
+.illustration_block{
+    width: 50%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    background-color: $white;
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &--1{
+        @extend .illustration_block;
+        border-radius: 0 25px 25px 0;
+    }
+}
+
+.illustration_title{
+    margin: 70px 0 40px 0;
+    @include flexrow;
+    &-icon{
+        width: 48px;
+        fill: $secondary;
+    }
+    h3{
+        margin-left: 20px;
+    }
+}
+
+.illustration_txt{
+    width: 520px;
+    height: auto;
+    margin-bottom: 40px;
+    P{
+        line-height: 24px;
+    }
+}
+
+.illustration_list{
+    ul{
+        margin-bottom: 50px
+    }
+    li{
+        @include flexrowcenter2;
+        padding: 16px 0 16px 16px; 
+    }
+    &-icon{
+        fill: $black;
+    }
+}
+
+.icon_container{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background-color: $primary100;
+    @include flexrowcentercenter 
+}
+
+.padding-left{
+    padding-left: 70px;
+}
+
+
+.illustration_block--3{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    background-color: $white;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.block_img{
+    position: absolute;
+    right: -50px;
+}
+
+.block_ipad{
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 345px;
+    left: 40px;
+    z-index: 1;
+
+}

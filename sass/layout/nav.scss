@@ -1,145 +1,124 @@
-.nav{
-    &_menu{
-        width: 240px;
-        height: 100%;
-        position: absolute;
-        right: 0px;
-        .link{
-            width: 100%;
-            height: auto;
-            position: relative;
-            &-anim{
-                width: 100%;
-                height: 2em;
-                margin-bottom: 20px;
-                position: relative;
-                span:nth-child(1){
-                    opacity: 0;
-                    animation: blur-anim 1s steps(1) 12400ms 2 forwards, nav-discover 1s linear 14400ms forwards, blur-moove 3s linear 15400ms infinite;
-                }
-            }
-        }
-    }
-}
+//example
 
-.border-blur{
-    width: 108px;
-    height: 1px;
-    top: 9px;
-    right: 0px;
-    transform-origin: right;
-    background-color: $color-txt;
-    position: absolute;
-    opacity: 0;
-    animation: border-discover 1s linear 14400ms, border-moove 3s linear 15400ms infinite;
-}
-.link{
-    ul{
-        width: 100%;
-        height: auto;
-        @include flex_CFS;
-        li{
-            width: 100%; 
-            height: 100%;
-            margin-bottom: 40px;
-            opacity: 0;
-            span{
-                opacity: 1;
-            }
-            a{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 300;
-            }
-            p{
-                font-family: 'Satoshi-Bold';
-                font-size: 35px;
-            }
-        }
-        li:nth-child(1){
-            animation: nav-anim 250ms linear 14400ms forwards;
-        }
-        li:nth-child(2){
-            animation: nav-anim 250ms linear 14650ms forwards;
-        }
-        li:nth-child(3){
-            animation: nav-anim 250ms linear 14900ms forwards;
-        }
-        li:nth-child(4){
-            animation: nav-anim 250ms linear 15150ms forwards;
-        }
-    }
-}
 
-.align{
-    text-align: end;
-}
+//----- Menu product detail-----//
 
-// classe qui me permet de rendre les boutons de mon menu en position relative pour appliquer les z index sur les blur
-.relative{
+.menu_product{
+    width: 100%;
+    height: 80px;
     position: relative;
-}
-
-
-//------- INDEX PAGE WITHOUT  -------//
-.nav{
-    &_menu{
-        width: 240px;
-        height: 100%;
-        position: absolute;
-        right: 0px;
-        .linknav--1{
-            width: 100%;
-            height: auto;
-            position: relative;
-            &-anim{
-                width: 100%;
-                height: 2em;
-                margin-bottom: 20px;
-                position: relative;
-                span:nth-child(1){
-                    animation: blur-moove 3s linear infinite;
-                }
-            }
+    @include flexrowcenter2;
+    &:hover{
+        .product_detail{
+            height: 258px;
         }
     }
 }
-
-.border-blur--1{
-    width: 108px;
-    height: 1px;
-    top: 9px;
-    right: 0px;
-    transform-origin: right;
-    background-color: $color-txt;
+.product_detail{
+    overflow: hidden;
+    width: 1440px;
+    height: 0px;
+    background-color: $white;
     position: absolute;
-    animation: border-moove 3s linear infinite;
+    top: 80px;
+    left: -333px;
+    z-index: 11;
+    transition: height 200ms ease-in-out;
+    h5{
+        margin-bottom: 20px;
+        margin: 48px 20px 32px 80px;
+    }
 }
-.linknav--1{
-    ul{
-        width: 100%;
-        height: auto;
-        @include flex_CFS;
-        
-        li{
-            width: 100%; 
-            height: 100%;
-            margin-bottom: 40px;
 
-            a{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 300;
-            }
-            p{
-                font-family: 'Satoshi-Bold';
-                font-size: 35px;
-            }
+.product_detail-block{
+    width: 50%;
+    height: 124px;
+    padding: 32px;
+    &:hover{
+        background-color: $primary100;
+    }
+}
+
+.product_detail-block-title{
+    width: 100%;
+    height: auto;
+    @include flexrowcenter2;
+    margin-bottom: 15px;
+
+
+    h6{
+        margin-left: 10px;
+        color: $primary;
+    }
+}
+
+
+//----- Menu ressource detail-----//
+
+.menu_ressource{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    @include flexrowcenter2;
+        &:hover{
+        .ressource_detail{
+            height: 302px;
         }
+    }
+}
+.ressource_detail{
+    overflow: hidden;
+    width: 1440px;
+    height: 0px;
+    background-color: $white;
+    position: absolute;
+    top: 80px;
+    left: -492px;
+    z-index: 12;
+    transition: height 200ms ease-in-out;
+    h5{
+        margin-bottom: 20px;
+        margin: 48px 20px 32px 80px;
+    }
+}
+
+.ressource_detail-block{
+    width: 25%;
+    height: 148px;
+    padding: 32px;
+
+    &:hover{
+        background-color: $primary100;
+    }
+}
+
+.ressource_detail-block-title{
+    width: 100%;
+    height: auto;
+    @include flexrowcenter2;
+    margin-bottom: 15px;
+
+
+    h6{
+        margin-left: 10px;
+        color: $primary;
     }
 }
 
 
 
+//----- Menu company -----//
+
+.menu_company{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    @include flexrowcenter2;
+}
+
+//ALL
+.flexrow{
+    @include flexrowcenter;
+    margin-left: 80px;
+    margin-right: 80px;
+}

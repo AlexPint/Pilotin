@@ -1,138 +1,85 @@
 //------ INDEX PAGE ------//
-.head_introduction{
-    h1{
-        font-family: 'Satoshi-Bold';
-        margin-bottom: 10px;
-        opacity: 0;
-        animation: intro-anim 200ms linear 9400ms 3 forwards;
-    }
-    h2{
-        font-family: 'Satoshi-Medium';
-        margin-bottom: 5px;
-        opacity: 0;
-        animation: intro-anim 200ms linear 10400ms 3 forwards;
-    }
-    p{  
-        font-family: 'Satoshi-Medium';
-        font-size: 25px;
-        opacity: 0;
-        animation: intro-anim 200ms linear 11000ms 3 forwards;
-    }
 
+.menu{
+    width: 1440px;
+    height: 80px;
+    padding: 0 95px 0 95px;
+    position: fixed;
+    z-index: 1000;
+    background-color: #00000000;
+    @include flexrowspaceB;
 }
 
-.head_container-intro{
+.menu_start{
+    position: relative;
+    @include flexrowcentercenter;
+    ul {
+        height: 100%;
+        @include flexrow;
+        li{
+            @include flexrow;
+            margin-right: 40px;
+        }
+    }
+}
+.menu_end{
     width: auto;
     height: auto;
-    position: relative;
-    margin-left: 50px;
-
-}
-//------ INDEX PAGE WITOUTH ANIM ------//
-.head_introduction--1{
-    h1{
-        font-family: 'Satoshi-Bold';
-        margin-bottom: 10px;
+    @include flexrowcentercenter;
+    a {
+        width: auto;
+        height: auto;
+        @include flexrowcentercenter;
+        margin-left: 16px;
     }
-    h2{
-        font-family: 'Satoshi-Medium';
-        margin-bottom: 5px;
-    }
-    p{  
-        font-family: 'Satoshi-Medium';
-        font-size: 25px;
-    }
-
-}
-
-
-
-
-//------ ANIM PAGE ------//
-
-#header_anim{
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    h2{
-        font-size: 35px;
-        margin-right: 4px;
+    p{
         text-transform: uppercase;
-        white-space: nowrap;
-        animation: banner 20s linear infinite forwards;
-        z-index: 0;
+        color: $primary;
+        margin-right: 8px;
     }
 }
 
-//------ Typo PAGE ------//
-.typo{
-    width: 702px;
-    height: 60px;
-    position: relative;
-    top: 80px;
-    overflow: visible;
-    //border: solid 1px green;
 
-    &_full{
-        width: 746px;
-        height: auto;
-        position: relative;
-        z-index: 8;   
-        transform-origin: left;
-        animation: typo-movement 18s cubic-bezier(.52,.84,.79,1.06) infinite;
-        overflow: hidden;
-        white-space: nowrap;
-        //border: solid 1px red;
+.menu_txt{
+    font-size: 16px;
+    line-height: 24px; 
+    font-weight: 500;
+    font-family:'Outfit', Verdana, Arial, Open;
+    margin-right: 8px;
+    color: $white;
+    &--1{
+        @extend .menu_txt;
+        color: $white;
 
-        p{
-            font-family: 'Satoshi-Bold';
-            font-size: 50px;
-            text-transform: uppercase;
-            color: $color-txt;
-        }
     }
-
-    &_border{
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        //border: solid 1px green;
-        z-index: 2;
-
-
-        p{
-            font-family: 'Satoshi-Bold';
-            font-size: 50px;
-            text-transform: uppercase;
-            -webkit-text-stroke: 1px;
-            -webkit-text-stroke-color: $color-txt;
-            color: transparent;
-        }
+    &--2{
+        margin-right: 0px;
+        color: $white;
     }
 }
 
-.edge_container{
-    width: 100px;
-    height: 100px;
-    perspective: 100px;
+.logo{
+    margin-right: 78px;
+    font: 100;
+}
+
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
+.white{
+    color: $white;
+}
+.black{
+    color: $black;
+}
+.invisible{
+    visibility: hidden;
+}
+
+.menu_logo-white{
     position: absolute;
-    //border: solid 1px green;
-    z-index: 3;
-    top: -15px;
-    right: -73px;
-    animation: miror-movement 18s cubic-bezier(.52,.84,.79,1.06) infinite;
-
-    .typo_edge{
-        width: 80px;
-        height: 80px;
-        border: solid 2px $color-txt;
-        transform: rotateY(-50deg);
-
-        background: rgb(205,221,239);
-        background: linear-gradient(90deg, rgba(205,221,239,0.4) 0%, rgba(36,61,89,0.4) 100%);
-        box-shadow: $shadow-block-4;
-    }
+    left: 0;
 }

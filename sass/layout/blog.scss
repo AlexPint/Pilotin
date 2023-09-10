@@ -1,0 +1,91 @@
+#blog{
+    width: 100%;
+    height: auto;
+    padding: 20px 80px 80px 80px; 
+    position: relative;
+    @include flexcolumncenter2;
+    h3{
+        margin-bottom: 20px;
+    }
+}
+
+.blog_intro{
+    width: 846px;
+    height: auto;
+    margin-bottom: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.blog_article{
+    width: 100%;
+    height: 440px;
+    padding: 32px 0 32px 0;
+    position: relative;
+    ul{
+        @include flexrowspaceB;
+    }
+}
+
+.blog_block{
+    @include flexcolumnflexstart;
+    border: solid 2px $neutral;
+    width: 32%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 32px 24px 32px 24px;
+    position: relative;
+
+}
+.p_box{
+    p{
+        white-space: normal; /* Permet au texte de passer à la ligne naturellement */
+        display: -webkit-box; /* Utilisation de la propriété -webkit-box pour gérer le nombre de lignes */
+        -webkit-line-clamp: 5; /* Limite le nombre de lignes à 3 avant d'ajouter les points de suspension */
+        -webkit-box-orient: vertical; /* Spécifie que le texte doit s'afficher verticalement */
+        overflow: hidden; /* Masque le texte débordant */
+        text-overflow: ellipsis; /* Ajoute des points de suspension (...) lorsque le texte dépasse */
+    }
+}
+
+.margin_bottom{
+    margin-bottom: 24px;
+}
+
+
+.blog_author{
+    width: 100%;
+    height: auto;
+    position: relative;
+    @include flexrowspaceBcenter;
+    &-end{
+        @include flexrowcentercenter;
+    }
+    &-photo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        margin-right: 10px;
+        img{
+            position: absolute;
+            object-fit: cover;
+            width: 140%;
+            height: auto;
+            top: -20px;
+            left: -15px;
+
+        }
+    }
+    p{  
+        width: 220px;
+        font-size: 14px;
+        line-height: 20px; 
+        font-weight: 500;
+        color: $black;
+        font-family:'Outfit', Verdana, Arial, Open;
+    }
+}
+
+
